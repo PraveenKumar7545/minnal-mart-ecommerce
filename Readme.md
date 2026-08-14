@@ -81,7 +81,6 @@ MinnalMart includes different electronics and appliance categories:
 | HTML5                    | Website structure                        |
 | Tailwind CSS             | Styling and responsive design            |
 | CSS                      | Custom styling where required            |
-| JavaScript               | Interactive functionality where required |
 | Unsplash / Online Images | Product and banner visuals               |
 
 ---
