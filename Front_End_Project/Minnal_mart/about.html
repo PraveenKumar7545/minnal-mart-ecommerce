@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> MinnalMart - about</title>
+		<link rel="icon" href ="img/mlogo.png">
+		
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+<!-- nav header -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+  <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+    <div class="flex gap-20 px-10">
+      <span>🚚 Free Shipping on Orders ₹999+</span>
+      <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+      <span>⚡ Lightning Deals. Smarter Living</span>
+      <span>💳 No Cost EMI Available</span>
+      <span>↩ Easy 7 Days Return</span>
+    </div>
+  </div>
+</section>
+<!-- navbar -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="#" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+            <a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+<!-- section 1 -->
+<section class="relative h-[90vh] overflow-hidden">
+
+    <img src="https://lh3.googleusercontent.com/d/1poCjjttv0C6TvH3lxNb0o-yGYFiXNJtO"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <div class="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
+
+    <div class="absolute inset-0 flex items-center">
+
+        <div class="max-w-7xl mx-auto w-full px-6 lg:px-16">
+
+            <div class="max-w-2xl text-white">
+
+                <p class="uppercase tracking-[6px] text-cyan-400 font-semibold mb-4">
+                    About MinnalMart
+                </p>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Your Trusted
+                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                        Electronics Partner
+                    </span>
+                </h1>
+
+                <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+                    MinnalMart is dedicated to bringing the latest electronics, home appliances and smart technology to every home. We focus on quality products, trusted brands, affordable prices and outstanding customer service to make your shopping experience simple and reliable.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-8">
+
+                    <a href="products.html"
+                       class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:scale-105 duration-300 font-semibold">
+                        Explore Products
+                    </a>
+
+                    <a href="contact.html"
+                       class="px-8 py-3 rounded-lg border-2 border-white hover:bg-white hover:text-blue-700 duration-300 font-semibold">
+                        Contact Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- section 2 -->
+<section class="py-20 bg-white">
+	<div class="max-w-7xl mx-auto px-6">
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+			<div class="flex justify-center">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWMRAOf5GBNXfPekl22eNeH74haTsOqjbktJkhrfW6nbWX5QKFgm3aW2WoBhsTSO29MVMkXwhDQHD7xoE1WcHExE1hfdWwTS8EgN2-w&s=10"
+			 alt="Founder"
+			 class="w-120 h-160 rounded-full border-2 object-cover border-cyan-500 shadow-2xl hover:scale-105 duration-300">
+		</div>
+			<div>
+				<p class="text-cyan-600 font-bold uppercase tracking-[5px]">
+					Meet Our Founder
+				</p>
+				<h2 class="text-4xl font-extrabold text-gray-900 mt-4">
+					STR
+				</h2>
+				<p class="text-xl font-semibold text-blue-700 mt-2">
+					Founder
+				</p>
+
+				<p class="text-gray-600 leading-8 mt-6">
+					MinnalMart is a modern electronics shopping platform committed to providing customers with high-quality products from trusted brands. From smartphones and laptops to home appliances and kitchen essentials, we offer a wide range of products designed to meet everyday technology needs.
+				</p>
+
+				<p class="text-gray-600 leading-8 mt-5">
+					Our focus is on delivering a seamless shopping experience through quality products, competitive pricing, secure payments, fast delivery, and reliable customer support. Every purchase reflects our commitment to customer satisfaction, innovation, and long-term value.
+				</p>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+
+					<div class="bg-gray-100 p-6 rounded-xl hover:shadow-xl duration-300">
+
+						<h3 class="text-xl font-bold text-blue-700 mb-3">
+							Our Vision
+						</h3>
+
+						<p class="text-gray-600">
+							To become one of the most trusted destinations for electronics and home appliance shopping by delivering innovation, quality, and value.
+						</p>
+
+					</div>
+
+					<div class="bg-gray-100 p-6 rounded-xl hover:shadow-xl duration-300">
+
+						<h3 class="text-xl font-bold text-blue-700 mb-3">
+							Our Mission
+						</h3>
+
+						<p class="text-gray-600">
+							To provide genuine products, exceptional customer service, and a smooth shopping experience that exceeds customer expectations.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="grid grid-cols-2 gap-6 mt-10">
+
+					<div class="bg-gradient-to-r from-blue-700 to-cyan-500 rounded-xl p-6 text-center text-white hover:shadow-xl hover:-translate-y-2 duration-300">
+
+						<h3 class="text-4xl font-extrabold">
+							50+
+						</h3>
+
+						<p class="mt-2 font-medium">
+							Trusted Brands
+						</p>
+
+					</div>
+
+					<div class="bg-gradient-to-r from-blue-700 to-cyan-500 rounded-xl p-6 text-center text-white hover:shadow-xl hover:-translate-y-2 duration-300">
+
+						<h3 class="text-4xl font-extrabold">
+							100%
+						</h3>
+
+						<p class="mt-2 font-medium">
+							Secure Shopping
+						</p>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+<!-- section 3 -->
+<section class="py-20 bg-white">
+
+	<div class="max-w-7xl mx-auto px-6">
+
+		<div class="text-center mb-14">
+
+			<p class="text-cyan-600 font-bold uppercase tracking-[5px]">
+				Our Achievements
+			</p>
+
+			<h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+				Growing with Trust & Innovation
+			</h2>
+
+			<p class="text-gray-500 mt-4">
+				Every milestone reflects our commitment to delivering the best shopping experience.
+			</p>
+
+		</div>
+
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-2xl duration-300">
+				<h3 class="text-5xl font-extrabold">50+</h3>
+				<p class="mt-3">Trusted Brands</p>
+			</div>
+
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-2xl duration-300">
+				<h3 class="text-5xl font-extrabold">100+</h3>
+				<p class="mt-3">Quality Products</p>
+			</div>
+
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-2xl duration-300">
+				<h3 class="text-5xl font-extrabold">100%</h3>
+				<p class="mt-3">Secure Shopping</p>
+			</div>
+
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white rounded-xl p-8 text-center hover:-translate-y-2 hover:shadow-2xl duration-300">
+				<h3 class="text-5xl font-extrabold">24/7</h3>
+				<p class="mt-3">Customer Support</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<!-- Section 7 - Customer Reviews -->
+<section class="p-10 bg-gray-100">
+
+    <h2 class="text-3xl font-bold text-center mb-10">Customer Reviews</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Review 1 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Amazing quality mobiles at best price. Delivery was very fast.</p>
+            <h4 class="mt-3 font-bold">Praveen Kumar </h4>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Laptop deals are really good. Worth the money.</p>
+            <h4 class="mt-3 font-bold">Sonai Rahul</h4>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Customer support is very helpful and quick response.</p>
+            <h4 class="mt-3 font-bold">Avinash</h4>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Home appliances quality is excellent. Happy purchase.</p>
+            <h4 class="mt-3 font-bold">Bastin</h4>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Best website for electronics. Clean UI and easy to use.</p>
+            <h4 class="mt-3 font-bold">Siva Suriya Rajan</h4>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Good offers and fast checkout process.</p>
+            <h4 class="mt-3 font-bold">Goamthi Harish</h4>
+        </div>
+
+    </div>
+
+</section>
+<!-- section 4 -->
+<section class="py-20 bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+
+	<div class="max-w-5xl mx-auto px-6 text-center">
+
+		<h2 class="text-4xl md:text-5xl font-extrabold">
+			Thank You for Visiting MinnalMart
+		</h2>
+
+		<p class="mt-6 text-lg leading-8 text-gray-100">
+			We're committed to delivering quality electronics, trusted brands, and an exceptional shopping experience. Thank you for choosing MinnalMart as your destination for smarter living.
+		</p>
+
+		<div class="flex flex-wrap justify-center gap-6 mt-10">
+
+			<a href="products.html"
+			class="bg-white text-blue-700 px-8 py-3 rounded-lg font-bold hover:scale-105 duration-300">
+				Shop Now
+			</a>
+
+			<a href="#"
+			class="border-2 border-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-700 duration-300">
+				Contact Us
+			</a>
+
+		</div>
+
+	</div>
+
+</section>
+
+		<!--footer-->
+		<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+		  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			   <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>
+				
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+
+		</footer>
+		
+
+		
+	</body>
+	</html>

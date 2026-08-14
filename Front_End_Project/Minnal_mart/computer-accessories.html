@@ -1,0 +1,684 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> MinnalMart - computer-accessories</title>
+		<link rel="icon" href ="img/mlogo.png">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+	<body>	
+<!-- nav header	 -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+  <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+    <div class="flex gap-20 px-10">
+      <span>🚚 Free Shipping on Orders ₹999+</span>
+      <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+      <span>⚡ Lightning Deals. Smarter Living</span>
+      <span>💳 No Cost EMI Available</span>
+      <span>↩ Easy 7 Days Return</span>
+    </div>
+  </div>
+</section>
+<!-- navbar  -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+                		           
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="#" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="computer-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+             
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+			<a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>
+			<a href="Refrigerators.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Refrigerators</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>     
+<!-- section 1 -->
+<section class="relative h-[90vh] overflow-hidden">
+    <!-- Background Image -->
+   <img src="https://lh3.googleusercontent.com/d/1BOhRe9OjP7WW_3riKfiOsY-VngMc1sPa"
+     class=" absolute w-full h-full object-cover">
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto h-full flex items-center px-6 lg:px-16">
+        <div class="max-w-2xl text-white">
+            <!-- Small Heading -->
+            <p class="uppercase tracking-[6px] text-cyan-400 font-semibold mb-4">
+                Upgrade Your Workspace
+            </p>
+            <!-- Main Heading -->
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                Premium
+                <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                    Computer Accessories
+                </span>
+            </h1>
+            <!-- Description -->
+            <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+                Discover keyboards, mice, monitors, SSDs, webcams,
+                gaming accessories and much more to build your
+                perfect workstation.
+            </p>
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4 mt-8">
+                <a href="products.html"
+                   class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 hover:scale-105 duration-300 font-semibold">
+                    Shop Now
+                </a>
+                <a href="offers.html"
+                   class="px-8 py-3 rounded-lg border-2 border-white hover:bg-white hover:text-blue-700 duration-300 font-semibold">
+                    View Offers
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section 2 -->
+<section id="categories" class="bg-white py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-14">
+            <p class="text-gray-400 font-bold uppercase tracking-[5px]">
+                Browse Collection
+            </p>
+            <h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+                Shop by Categories
+            </h2>
+            <p class="text-gray-500 mt-4">
+                Find the best computer accessories for work, study and gaming.
+            </p>
+        </div>
+      
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+        
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=500"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Keyboard
+                </h3>
+            </a>      
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500"
+                        class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Mouse
+                </h3>
+            </a>     
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Monitor
+                </h3>
+            </a>    
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://images.unsplash.com/photo-1591799265444-d66432b91588?w=500"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    SSD
+                </h3>
+            </a>
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://www.fingers.co.in/secure/api/uploads/products/1631103418_webcam_1.png"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Webcam
+                </h3>
+            </a>        
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Headset
+                </h3>
+            </a>       
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://blacki.co.in/cdn/shop/files/Black-i-USB-3.0-7-Port-Hub-348462.jpg?v=1767427860&width=2048"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    USB Hub
+                </h3>
+            </a>
+            <a href="#" class="group text-center">
+                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-lg group-hover:scale-110 group-hover:border-blue-600 duration-300">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3me-uFePbKeeEeBw_8NXpqQDAIqJTyOwXpCyyGWJrsQ&s=10"
+                         class="w-full h-full object-cover">
+                </div>
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Laptop Bag
+                </h3>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- section3  -->
+<section class="bg-slate-100 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center mb-12">
+            <p class="text-gray-400	 font-bold uppercase tracking-[5px]">
+                Top Picks
+            </p>
+            <h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+                Trending Computer Accessories
+            </h2>
+            <p class="text-gray-500 mt-4">
+                Upgrade your workspace with our best-selling computer accessories.
+            </p>
+        </div>
+        <!-- Product Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJvhXx0j6ldnJKmkf2VBgskwQV-7Wi8P5y4A7AiFQV5g&s=10"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">Mechanical Keyboard</h3>
+                <p class="text-sm text-gray-500">RGB Backlit Keyboard</p>
+                <p class="text-blue-700 font-bold text-lg">₹2,499</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">Wireless Mouse</h3>
+                <p class="text-sm text-gray-500">2.4GHz USB Mouse</p>
+                <p class="text-blue-700 font-bold text-lg">₹799</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_SL1500_.jpg"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">Gaming Headset</h3>
+                <p class="text-sm text-gray-500">Noise Cancelling Mic</p>
+                <p class="text-blue-700 font-bold text-lg">₹1,999</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA-aGFZe2H_-wSv5fyJ34_mOB_pLxbgB8_BQZTPPQtow&s=10"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">External SSD</h3>
+                <p class="text-sm text-gray-500">1TB High Speed SSD</p>
+                <p class="text-blue-700 font-bold text-lg">₹6,499</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://www.ugreenindia.com/cdn/shop/files/61rumlusrfl-_ac_sl1500_-640x640.jpg?v=1763828396&width=1214"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">HD Webcam</h3>
+                <p class="text-sm text-gray-500">1080P Video Calling</p>
+                <p class="text-blue-700 font-bold text-lg">₹2,299</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://blacki.co.in/cdn/shop/files/Black-i-USB-3.0-7-Port-Hub-348462.jpg?v=1767427860&width=2048"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">USB Hub</h3>
+                <p class="text-sm text-gray-500">4-Port USB 3.0 Hub</p>
+                <p class="text-blue-700 font-bold text-lg">₹999</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYigAwdSyCJ9oiX7sG0i9m7q6UESKbX618MO64w9qHAk6zTs07bcpHUqM&s=10"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">Laptop Cooling Pad</h3>
+                <p class="text-sm text-gray-500">Dual Fan Cooling</p>
+                <p class="text-blue-700 font-bold text-lg">₹1,499</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+            <div class="bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 duration-300 text-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3me-uFePbKeeEeBw_8NXpqQDAIqJTyOwXpCyyGWJrsQ&s=10"
+                     class="mx-auto h-40 object-contain mb-4">
+                <h3 class="text-lg font-bold">Laptop Backpack</h3>
+                <p class="text-sm text-gray-500">Water Resistant Bag</p>
+                <p class="text-blue-700 font-bold text-lg">₹1,899</p>
+                <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">
+                    Add Cart
+                </a>
+            </div>
+        </div>
+    </div>
+</section>		
+<!-- Section 4 -->
+<section class="p-10 bg-gray-200">
+	<h2 class="text-3xl font-bold text-center mb-8">Why Choose MinnalMart</h2>
+		<div class="grid md:grid-cols-4 gap-5 text-center">
+				<div class="bg-white rounded overflow-hidden border hover:-translate-y-2 transition duration-400">
+					<img src="data:image/png;base64,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" 
+					class="w-full h-70 ">
+						<div class="bg-black text-white p-4">
+							<h3 class="font-bold text-xl animate-bounce">Fast Delivery</h3>
+							<p>Quick delivery for all city orders with safe packing.</p>
+						</div>
+				</div>
+				<div class="bg-white rounded overflow-hidden border hover:-translate-y-2 transition duration-400">
+					<img src="https://thumbs.dreamstime.com/b/red-button-ribbon-words-best-price-today-bright-round-gold-plastic-circle-label-discount-offer-realistic-vector-86978814.jpg?w=768"
+					class="w-full h-70 ">
+						<div class="bg-black text-white p-4">
+							<h3 class="font-bold text-xl animate-bounce">Best Price</h3>
+							<p>Daily price checks and seasonal discount offers.</p>
+						</div>	
+				</div>
+				<div class="bg-white rounded overflow-hidden border hover:-translate-y-2 transition duration-400">
+					<img src="https://media.istockphoto.com/id/586381530/photo/lifetime-warranty-sign.jpg?s=612x612&w=0&k=20&c=PESSRXovKshf15bXHa2MnzzDGd0A8_oCX-Lt3kOWi08=" 
+					class="w-full h-70">
+						<div class="bg-black text-white p-4">
+							<h3 class="font-bold text-xl animate-bounce">Warranty</h3>
+							<p>Brand warranty guidance and service support.</p>
+						</div>	
+				</div>
+				<div class="bg-white rounded overflow-hidden border hover:-translate-y-2 transition duration-400">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOrg7cEgcfRo3NN7pijGfyL9QufQcWql9o0nvHFPVZw&s=10" 
+					class="w-full h-70">
+						<div class="bg-black text-white p-4">
+							<h3 class="font-bold text-xl animate-bounce">Easy EMI</h3>
+							<p>Simple EMI plan information for costly products.</p>
+						</div>
+				</div>
+		</div>	
+</section>
+<!-- section 5 -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Heading -->
+        <div class="text-center mb-14">
+            <p class="text-gray-500 font-bold uppercase tracking-[5px]">
+                Featured Collections
+            </p>
+            <h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+                Find the Perfect Setup
+            </h2>
+            <p class="text-gray-500 mt-4">
+                Choose accessories designed for every lifestyle.
+            </p>
+        </div>
+        <!-- Collection Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Gaming -->
+            <div class="bg-white border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800"
+                     class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Gaming Setup</h3>
+                    <p class="text-gray-600 mb-4">
+                        Mechanical keyboards, gaming mice and RGB accessories.
+                    </p>
+                    <a href="products.html"
+                       class="text-blue-700 font-semibold hover:text-cyan-600">
+                        Explore →
+                    </a>
+                </div>
+            </div>
+            <!-- Office -->
+            <div class="bg-white border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?w=800"
+                     class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Office Essentials</h3>
+                    <p class="text-gray-600 mb-4">
+                        Comfortable accessories for productive work.
+                    </p>
+                    <a href="products.html"
+                       class="text-blue-700 font-semibold hover:text-cyan-600">
+                        Explore →
+                    </a>
+                </div>
+            </div>
+            <!-- Storage -->
+            <div class="bg-white border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <img src="https://images.unsplash.com/photo-1591799265444-d66432b91588?w=800"
+                     class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Storage Devices</h3>
+                    <p class="text-gray-600 mb-4">
+                        SSDs, Pendrives and external storage solutions.
+                    </p>
+                    <a href="products.html"
+                       class="text-blue-700 font-semibold hover:text-cyan-600">
+                        Explore →
+                    </a>
+                </div>
+            </div>
+            <!-- Work From Home -->
+            <div class="bg-white border rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 duration-300">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800"
+                     class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Work From Home</h3>
+                    <p class="text-gray-600 mb-4">
+                        Webcams, headsets and accessories for remote work.
+                    </p>
+                    <a href="products.html"
+                       class="text-blue-700 font-semibold hover:text-cyan-600">
+                        Explore →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- section 5 -->
+<section class="px-4 py-16 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+
+		<div class="text-center mb-12">
+
+			<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-7">
+			Accessories Buying Guide
+		</h2>
+        <p class="text-gray-500 mt-4">
+            Find the perfect accessories based on your daily needs.
+        </p>
+
+    </div>
+    <!-- Table -->
+    <div class="overflow-x-auto rounded-xl shadow-lg">
+        <table class="w-full min-w-[700px] border border-gray-300 text-center bg-white">
+            <thead>
+                <tr class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+                    <th class="border border-gray-300 p-4">Need</th>
+                    <th class="border border-gray-300 p-4">Suggested Product</th>
+                    <th class="border border-gray-300 p-4">Best For</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Students</td>
+                    <td class="border border-gray-300 p-4">Wireless Mouse & Keyboard</td>
+                    <td class="border border-gray-300 p-4">Study & Assignments</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Office Work</td>
+                    <td class="border border-gray-300 p-4">Webcam & Headset</td>
+                    <td class="border border-gray-300 p-4">Meetings & Video Calls</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Gaming</td>
+                    <td class="border border-gray-300 p-4">Gaming Mouse & Mechanical Keyboard</td>
+                    <td class="border border-gray-300 p-4">Fast Response & Accuracy</td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Storage</td>
+                    <td class="border border-gray-300 p-4">External SSD & Pendrive</td>
+                    <td class="border border-gray-300 p-4">Fast & Secure File Backup</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Button -->
+    <div class="text-center mt-10">
+        <a href="contact.html"
+           class="inline-block px-8 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 text-white font-semibold hover:from-blue-800 hover:to-cyan-600 duration-300">
+            Need Help? Contact Us
+        </a>
+    </div>
+</section>
+<!--secion 6 Newsletter -->
+<section class="bg-gray-100 py-12 px-4 md:px-8 lg:px-16 ">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+        Join Newsletter
+    </h2>
+    <form class="max-w-md mx-auto bg-white p-6 md:p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-400">
+        <div class="mb-5">
+            <label class="block mb-2 font-semibold">
+                Name
+            </label>
+            <input
+                type="text"
+                placeholder="Enter your name"
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-6">
+            <label class="block mb-2 font-semibold">
+                Email
+            </label>
+            <input
+                type="email"
+                placeholder="Enter your email"
+                class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="text-center ">
+            <button
+                type="submit"
+                class="w-full md:w-auto bg-gradient-to-r from-blue-700 to-cyan-500  hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300  animate-bounce ">
+                Subscribe
+            </button>
+        </div>
+    </form>
+</section>
+<!--footer-->
+		<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+		  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			   <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>
+				
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+
+</footer>		
+</body>
+</html>

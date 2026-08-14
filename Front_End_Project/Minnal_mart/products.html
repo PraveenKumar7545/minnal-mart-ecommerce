@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title> MinnalMart - products</title>
+		<link rel="icon" href ="img/mlogo.png">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>	 
+<body>
+<!-- nav header -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+  <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+    <div class="flex gap-20 px-10">
+      <span>🚚 Free Shipping on Orders ₹999+</span>
+      <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+      <span>⚡ Lightning Deals. Smarter Living</span>
+      <span>💳 No Cost EMI Available</span>
+      <span>↩ Easy 7 Days Return</span>
+    </div>
+  </div>
+</section>
+<!-- navbar -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="#" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="computer-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+			<a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>
+			<a href="Refrigerators.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Refrigerators</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>				
+<!--  Section 1-->
+<section class="relative w-full h-[80vh] bg-white overflow-hidden">		
+		<img src="img/product.png"
+			alt="Products Banner"
+			class="absolute inset-0 w-full h-full object-cover">
+		<div class="absolute top-6 sm:top-8 md:top-10 left-1/2 -translate-x-1/2 text-center px-4 w-full">
+		<p class="text-base sm:text-lg md:text-xl font-semibold text-blue-600 uppercase tracking-[3px] sm:tracking-[5px]">
+			Welcome to MinnalMart
+		</p>
+		<h1 class="mt-2 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
+			Explore Our Latest Electronics
+		</h1>
+	</div>
+	</section>
+<!-- section 2 3 videos -->
+<section id="categories" class="py-16 px-4 sm:px-6 lg:px-12 bg-gray-50">
+		<div class="text-center mb-12">
+			<h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
+				Shop by Category
+			</h2>
+			<p class="mt-3 text-gray-600 text-base sm:text-lg">
+				Choose your favorite category and discover the latest products.
+			</p>
+		</div>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<!-- C1 -->
+			<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2 transition duration-400">
+				<video autoplay muted loop playsinline
+					class="w-full ">
+					<source src="https://videotourl.com/videos/1783877276101-7229e6a7-5215-4afb-ae0a-802c3dc1325d.mp4" type="video/mp4">
+				</video>
+				<div class="p-6">
+					<h3 class="text-2xl font-bold mb-2">
+						Mobile World
+					</h3>
+					<p class="text-gray-600 mb-5">
+						Explore premium smartphones from Apple, Samsung, Vivo, Oppo and more.
+					</p>
+					<a href="mobiles.html"
+						class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500 hover:bg-blue-400 text-white px-6 py-3 rounded-lg font-semibold transition animate-bounce ">
+						Shop Now →
+					</a>
+				</div>
+			</div>
+			<!-- C2 -->
+			<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2 transition duration-400">
+				<video autoplay muted loop playsinline
+					class="w-full">
+					<source src="https://videotourl.com/videos/1783877195114-08e34f57-42d2-47fe-aea2-5fdbaac2a7ef.mp4" type="video/mp4">
+				</video>
+				<div class="p-6">
+					<h3 class="text-2xl font-bold mb-2">
+						Laptop Zone
+					</h3>
+					<p class="text-gray-600 mb-5">
+						Powerful laptops for students, professionals and gamers.
+					</p>
+					<a href="laptop.html"
+						class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500 hover:bg-blue-400 text-white px-6 py-3 rounded-lg font-semibold transition animate-bounce ">
+						Shop Now →
+					</a>
+				</div>
+			</div>
+			<!-- C3 -->
+			<div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 hover:-translate-y-2 transition duration-400">
+				<video autoplay muted loop playsinline
+					class="w-full ">
+					<source src="https://videotourl.com/videos/1783877301013-c0514163-d3d5-4c19-91ec-a20ea8d52161.mp4" type="video/mp4">
+				</video>
+				<div class="p-6">
+					<h3 class="text-2xl font-bold mb-2">
+						Accessories Hub
+					</h3>
+					<p class="text-gray-600 mb-5">
+						 Discover headphones, smartwatches, speakers, keyboards, mice and more.
+					</p>
+					<a href="home-appliances.html"
+						class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500 bg-gradient-to-r from-blue-700 to-cyan-500 -400 text-white px-6 py-3 rounded-lg font-semibold transition animate-bounce ">
+						Shop Now →
+					</a>
+				</div>
+			</div>
+		</div>
+</section>
+<!-- section 3 for mobiles -->
+	<section class="p-10 bg-gray-200">
+	  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+		<!-- Mobiles -->
+	  <!-- </h2> -->
+	  <div class="mb-10">
+		<img src="http://127.0.0.1:5500/img/PM_hero.png"
+			 class="w-full h-full rounded-lg transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-2xl font-bold mb-6 animate-bounce"> -->
+		  <!-- Shop by Brands -->
+		<!-- </h3> -->
+		<img src="http://127.0.0.1:5500/img/Mbanner.png"
+			 class=" mx-auto w-full max-w-4xl shadow-lg transition hover:-translate-y-2 transition duration-400 ">
+	  </div>
+	  <div class="mb-10 ">
+		<img src="http://127.0.0.1:5500/img/Mobile_Brands.png"
+			 class="w-full max-w-5xl mx-auto rounded-lg shadow-lg transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <div class="flex gap-6 overflow-x-auto pb-4">
+		<!-- Apple -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LASlVMdcb1nVmLKMz2sXPoFWOcG4AKnaO0l3aZu15g&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">iPhone 18 Pro Max</h3>
+		  <p class="text-sm text-gray-500">Latest Apple model | Warranty available</p>
+		  <p class="font-bold text-blue-700 text-lg">₹69,999</p>
+		  <p><del>₹79,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Samsung -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-256GB-Titanium-Violet-3.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Samsung Galaxy S23</h3>
+		  <p class="text-sm text-gray-500">Flagship performance</p>
+		  <p class="font-bold text-blue-700 text-lg">₹59,999</p>
+		  <p><del>₹69,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- OnePlus -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/323002_0_ZUlzFMogu.png"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">OnePlus 11</h3>
+		  <p class="text-sm text-gray-500">Fast & smooth</p>
+		  <p class="font-bold text-blue-700 text-lg">₹56,999</p>
+		  <p><del>₹64,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Xiaomi -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://vlebazaar.in/image/cache/catalog//B0C1GKQ79V/Redmi-Note-12-Ice-Blue-6GB-RAM-64GB-Storage-B0C1GKQ79V-1200x1200.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Redmi Note 12</h3>
+		  <p class="text-sm text-gray-500">Budget friendly</p>
+		  <p class="font-bold text-blue-700 text-lg">₹14,999</p>
+		  <p><del>₹18,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Realme -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ASMoTtdfzfQ7shD842jRIAwmOLVJfJUFhHua0qMjDQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Realme GT 7</h3>
+		  <p class="text-sm text-gray-500">Gaming performance</p>
+		  <p class="font-bold text-blue-700 text-lg">₹25,999</p>
+		  <p><del>₹30,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Vivo -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1722858590754/c64a4f632bb1ee8cb72ccf175580fe68.png"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Vivo V40</h3>
+		  <p class="text-sm text-gray-500">Camera focus</p>
+		  <p class="font-bold text-blue-700 text-lg">₹29,999</p>
+		  <p><del>₹34,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Oppo -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/oppo/494794317/0/vFe2KUxJZ7-bPfb9607T-OPPO-Reno16c-Twilight-Violet-12-256-494794317-i-1.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Oppo Reno 16c</h3>
+		  <p class="text-sm text-gray-500">Stylish design</p>
+		  <p class="font-bold text-blue-700 text-lg">₹27,999</p>
+		  <p><del>₹32,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Pixel -->
+		<div class="min-w-[250px] bg-white p-5 rounded text-center shadow-sm hover:shadow-lg transition hover:-translate-y-2 transition duration-400">
+		  <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_P9_2024Q2_Peony_LT_T-Shot_r.width-500.format-webp_iwsszqn.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Google Pixel 9</h3>
+		  <p class="text-sm text-gray-500">Pure Android</p>
+		  <p class="font-bold text-blue-700 text-lg">₹49,999</p>
+		  <p><del>₹59,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+	  </div>
+	</section>
+<!-- Laptop Section 4 -->
+<section class="p-10 bg-gray-200">
+	  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+		<!-- Laptops -->
+	  <!-- </h2> -->
+	  <!-- Hero Image -->
+	  <div class="mb-10">
+		<img src="img/laptop_img/lap_hero.png"
+     alt="laptop hero img"
+     class="w-full h-full rounded-lg">
+	  </div>
+	  <!-- Brands -->
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-xl font-semibold mb-6 animate-bounce "> -->
+		  <!-- Shop by Brands -->
+		<!-- </h3> -->
+		<img src="img/laptop_img/brnd.png"
+			 class="mx-auto w-full max-w-4xl hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <!-- Banner -->
+	  <div class="mb-10">
+		<img src="img/laptop_img/banner_img.png"
+			 class="w-full max-w-5xl mx-auto rounded-lg shadow hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <section class="py-6 px-2 bg-gray-50 rounded-lg">
+		<div class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+		  <!-- 1 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSs5Zm5-GRcqyK0Wx1XK7-9Z6vsXmGJ1H6zp8a3zNlAt_PpQyTBraqeWqLWAVUzuxK1y8RwaCf2YmL73LNV-jLZG_K26iDfm6bsRALXRK0qxJQR2f4HcW51"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">HP Pavilion Laptop</h3>
+			<p class="text-sm text-gray-500">i5 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹49,999</p>
+			<p><del>₹72,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 2 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://m.media-amazon.com/images/I/71I7xDIyINL._AC_UF1000,1000_QL80_.jpg"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Dell Inspiron 15</h3>
+			<p class="text-sm text-gray-500">i5 | 16GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹54,999</p>
+			<p><del>₹79,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 3 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded  text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/315523_0_4P35Q8bth.png"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Lenovo IdeaPad Slim</h3>
+			<p class="text-sm text-gray-500">Ryzen 5 | 8GB | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹44,999</p>
+			<p><del>₹68,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 4 -->	
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzw4FCmJjKefFDDpim1oJ1zrdiixjzncoegJOdaoezUDrWIOaR6urAQF_LW0HRXofkorRRho2z3u-yYi6gDJl7IQLr8ASG8RQ7iwS-kupG41QPHbmm8BNcBosTtMDUWyYglfnLIIxk"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Apple MacBook Air M1</h3>
+			<p class="text-sm text-gray-500">8GB RAM | 256GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹79,999</p>
+			<p><del>₹99,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 5 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/computer/m/b/n/-original-imahknwxtncqwt8k.jpeg"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Asus VivoBook 15</h3>
+			<p class="text-sm text-gray-500">i3 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹39,999</p>
+			<p><del>₹59,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 6 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/314530_0_jqwv4i.png"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Acer ALG Gaming Laptop</h3>
+			<p class="text-sm text-gray-500">Ryzen 5 | 16GB RAM | GTX Graphics</p>
+			<p class="font-bold text-blue-700 text-lg">₹59,999</p>
+			<p><del>₹85,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 7 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oPV7uTFuU52gkFjgKyi_KkUR8kyIOK4X_6Q-wlV_6g"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">MSI Gaming Laptop</h3>
+			<p class="text-sm text-gray-500">i7 | 16GB RAM | RTX Graphics</p>
+			<p class="font-bold text-blue-700 text-lg">₹89,999</p>
+			<p><del>₹1,20,000</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		  <!-- 8 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR12fh5s7w2B9PXFSrJhxJIrVx0Gf-0GJHU-aWv9ePbzzRxWACCFgZbEo0VhkImFQZm59ACGijRsY_9QZCr095HoFqb6dx_7cJOD5Z7gxB7Nf-xEHwiVcx1AatbFqVo8TxtrbfiCA"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Samsung Galaxy Book</h3>
+			<p class="text-sm text-gray-500">i5 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹64,999</p>
+			<p><del>₹89,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+		</div>
+</section>	
+</section>
+<!-- Kitchen Appliances section 5 -->
+<section class="p-10 bg-gray-100">	
+	  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+		<!-- Kitchen Appliances -->
+	  <!-- </h2> -->
+	  <div class="mb-10">
+    <img src="img/kit_hero.png"
+         class="w-full h-full rounded-lg transition hover:-translate-y-2 transition duration-400 shadow-lg ">
+  </div>
+	  <!-- K  brands -->
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-2xl font-bold mb-6 animate-bounce"> -->
+		  <!-- Shop by Brands -->
+		<!-- </h3> -->
+		<img src="img/kitchen_brands.png"
+			 class="mx-auto w-full max-w-4xl transition hover:-translate-y-2 transition duration-400 shadow-lg ">
+	  </div>
+	  <!-- K banner -->
+	  <div class="mb-10">
+		<a href="kitchen-appliances.html" ><img src="img/kitchen_offer.png"
+			 class="w-full max-w-5xl mx-auto rounded-lg shadow-2xl transition hover:-translate-y-2 transition duration-400"></a>
+	  </div>
+	  <div class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+		<!-- Mixer Grinder -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://shop.ttkprestige.com/media/catalog/product/3/1/3106-41353-IMG1.jpg?optimize=medium&fit=bounds&height=500&width=500"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Mixer Grinder</h3>
+		  <p class="text-sm text-gray-500">3 Jars | 750W</p>
+		  <p class="font-bold text-blue-700 text-lg">₹2,999</p>
+		  <p><del>₹4,499</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Induction Stove -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://m.media-amazon.com/images/I/61kwLo6dinL._AC_SR480%2C570_.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Induction Stove</h3>
+		  <p class="text-sm text-gray-500">Fast heating | Energy saving</p>
+		  <p class="font-bold text-blue-700 text-lg">₹1,999</p>
+		  <p><del>₹3,299</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Rice Cooker -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="data:image/avif;base64,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"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Rice Cooker</h3>
+		  <p class="text-sm text-gray-500">1.8L | Auto cook</p>
+		  <p class="font-bold text-blue-700 text-lg">₹2,499</p>
+		  <p><del>₹3,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Microwave -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS861r9KyaHkvPgjAuUCias5cur3J7aQ9PW36S18T3i4Q&s"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Microwave Oven</h3>
+		  <p class="text-sm text-gray-500">20L | Grill function</p>
+		  <p class="font-bold text-blue-700 text-lg">₹6,999</p>
+		  <p><del>₹9,499</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Air Fryer -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT5bPib4oR2_zhW9IMSPvqHPR83ZbrUzGPsw9tCkOdVQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Air Fryer</h3>
+		  <p class="text-sm text-gray-500">Oil-free cooking</p>
+		  <p class="font-bold text-blue-700 text-lg">₹4,499</p>
+		  <p><del>₹6,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Electric Kettle -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKwceNrTtLtf6F00JkpQeZUId2lbIOKcJaGRdr6bJYw&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Electric Kettle</h3>
+		  <p class="text-sm text-gray-500">1.5L | Fast boil</p>
+		  <p class="font-bold text-blue-700 text-lg">₹1,299</p>
+		  <p><del>₹2,199</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Toaster -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://d91ztqmtx7u1k.cloudfront.net/ClientContent/Images/ExtraLarge/pigeon-2-slice-auto-pop-up-toa-20260319193704226.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Pop-up Toaster</h3>
+		  <p class="text-sm text-gray-500">2 Slice | Compact</p>
+		  <p class="font-bold text-blue-700 text-lg">₹1,499</p>
+		  <p><del>₹2,499</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+	  </div>
+</section>
+<!-- Home Appliances section 6 -->
+	<section class="p-10 bg-gray-100">
+	  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+		<!-- Home Appliances -->
+	  <!-- </h2> -->
+	  <div class="mb-10">
+		<img src="img/H_Hero.png"
+			 class="w-full h-full rounded-lg">
+	  </div>
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-2xl font-bold mb-6 animate-bounce"> -->
+		  <!-- Shop by Brands -->
+		<!-- </h3> -->
+		<img src="img/kitchen_img/banner_img.png" 
+			 class="mx-auto h-full w-full max-w-4xl transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <div class="mb-10">
+		<a href="home-appliances.html"><img src="img/kitchen_img/image.png" alt=" banner img"
+			 class="w-full max-w-5xl mx-auto rounded-lg shadow-2xl transition hover:-translate-y-2 transition duration-400"></a>
+	  </div>
+	  <div class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+		<!-- Refrigerator -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMeeWzZkG-PaSZrLEljI0Y9Lcthb4hxeEn3MwUNt5E1A&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Refrigerator</h3>
+		  <p class="text-sm text-gray-500">Double Door | 260L</p>
+		  <p class="font-bold text-blue-700 text-lg">₹24,999</p>
+		  <p><del>₹32,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Washing Machine -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpsNa0RFIVrGZfKyCZdeT-ZJzh06spnzXrtIMgNlNvjA&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Washing Machine</h3>
+		  <p class="text-sm text-gray-500">7kg | Fully Automatic</p>
+		  <p class="font-bold text-blue-700 text-lg">₹19,999</p>
+		  <p><del>₹27,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Air Conditioner -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwXYdLcFdPjC-FOuEe0YNEVfGQid7xUNelE4t1T8IcFw&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Air Conditioner</h3>
+		  <p class="text-sm text-gray-500">1.5 Ton | Inverter AC</p>
+		  <p class="font-bold text-blue-700 text-lg">₹34,999</p>
+		  <p><del>₹45,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Smart TV -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrToRnlt5WL7078XS8-MLxbTcdVHfNfiVaO9gG524_1Q&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Smart TV</h3>
+		  <p class="text-sm text-gray-500">43” | 4K UHD</p>
+		  <p class="font-bold text-blue-700 text-lg">₹29,999</p>
+		  <p><del>₹39,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Vacuum Cleaner -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://www.autofresh.in/wp-content/uploads/2025/10/wet-and-dry-vacuum-cleaner.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Vacuum Cleaner</h3>
+		  <p class="text-sm text-gray-500">High suction | Compact</p>
+		  <p class="font-bold text-blue-700 text-lg">₹6,999</p>
+		  <p><del>₹9,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Water Purifier -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://m.media-amazon.com/images/I/41oCWtsZnNL._AC_UF1000,1000_QL80_.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Water Purifier</h3>
+		  <p class="text-sm text-gray-500">RO + UV | 7L</p>
+		  <p class="font-bold text-blue-700 text-lg">₹8,999</p>
+		  <p><del>₹12,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+	  </div>
+	</section>
+<!-- audio devies section -->
+<section class="p-10 bg-gray-200">
+	  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+		<!-- Audio Devices -->
+	  <!-- </h2> -->
+	  <div class="mb-10">
+		<img src="img/Headphones_img/hero_img.png" alt=" hero img"
+			 class="w-full h-full rounded-lg shadow-2xl transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-2xl font-bold mb-6 animate-bounce"> -->
+		  <!-- Shop by Brands -->
+		<!-- </h3> -->
+		<img src="img/Headphones_img/brnd_img.png"
+			 class="mx-auto w-full max-w-4xl rounded-lg transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	  <div class="mb-10">
+		<img src="img/Headphones_img/off_ban.png"
+			 class="w-full max-w-5xl mx-auto rounded-lg shadow-2xl transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	<div class="flex gap-6 overflow-x-auto pb-4 scrollbar-hide">
+		<!-- Headphones -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPeiM6Mx2lL0KTDuKsqbmeQOt7SczzWwoCSMb0_roDQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Wireless Headphones</h3>
+		  <p class="text-sm text-gray-500">Noise Cancelling</p>
+		  <p class="font-bold text-blue-700 text-lg">₹2,999</p>
+		  <p><del>₹4,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Earbuds -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxtzk12Uvjdr-f5px_ihXsKDEMreEPKGMHIJVy3z9onQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Bluetooth Earbuds</h3>
+		  <p class="text-sm text-gray-500">True Wireless</p>
+		  <p class="font-bold text-blue-700 text-lg">₹1,499</p>
+		  <p><del>₹2,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Speaker -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGZ5nxA5amtgWyff1UYdKuvXowdWb8wIqaw4pXJCVRyQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Bluetooth Speaker</h3>
+		  <p class="text-sm text-gray-500">Portable | Deep Bass</p>
+		  <p class="font-bold text-blue-700 text-lg">₹2,199</p>
+		  <p><del>₹3,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Neckband -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://magicyantra.in/wp-content/uploads/2021/07/Scan.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Neckband Earphones</h3>
+		  <p class="text-sm text-gray-500">Long Battery</p>
+		  <p class="font-bold text-blue-700 text-lg">₹1,199</p>
+		  <p><del>₹2,199</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Soundbar -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFrtA-fn-SYK39IbGQ6rZwd0hU5ADPSIz50R3b3x62tQ&s"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Soundbar</h3>
+		  <p class="text-sm text-gray-500">Home Theater Sound</p>
+		  <p class="font-bold text-blue-700 text-lg">₹5,999</p>
+		  <p><del>₹8,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+		<!-- Gaming Headset -->
+		<div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._SL1500_.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Gaming Headset</h3>
+		  <p class="text-sm text-gray-500">RGB | Surround Sound</p>
+		  <p class="font-bold text-blue-700 text-lg">₹2,499</p>
+		  <p><del>₹4,499</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">Add Cart</a>
+		</div>
+    </div>
+</section>
+<!-- Section 7 - Customer Reviews -->
+<section class="p-10 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10">Customer Reviews</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Amazing quality mobiles at best price. Delivery was very fast.</p>
+            <h4 class="mt-3 font-bold">Praveen Kumar </h4>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Laptop deals are really good. Worth the money.</p>
+            <h4 class="mt-3 font-bold">Sonai Rahul</h4>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Customer support is very helpful and quick response.</p>
+            <h4 class="mt-3 font-bold">Avinash</h4>
+        </div>
+        <!-- Review 4 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Home appliances quality is excellent. Happy purchase.</p>
+            <h4 class="mt-3 font-bold">Bastin</h4>
+        </div>
+        <!-- Review 5 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Best website for electronics. Clean UI and easy to use.</p>
+            <h4 class="mt-3 font-bold">Siva Suriya Rajan</h4>
+        </div>
+        <!-- Review 6 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Good offers and fast checkout process.</p>
+            <h4 class="mt-3 font-bold">Goamthi Harish</h4>
+        </div>
+    </div>
+</section>
+<!-- section 6 table -->
+<section class="px-4 py-12 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+		<h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-10">
+			Shopping Guide
+		</h2>
+		<h3 class="text-xl md:text-2xl font-bold mb-6">
+			Choose Correct Product
+		</h3>
+		<div class="overflow-x-auto shadow-lg rounded-lg">
+			<table class="w-full min-w-[650px] bg-white border border-gray-300 text-center">
+				<thead>
+					<tr class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+						<th class="border border-gray-300 p-4">Need</th>
+						<th class="border border-gray-300 p-4">Suggested Product</th>
+						<th class="border border-gray-300 p-4">Reason</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="hover:bg-gray-100">
+						<td class="border border-gray-300 p-4">Entertainment</td>
+						<td class="border border-gray-300 p-4">Mobile and TV	</td>
+						<td class="border border-gray-300 p-4">
+							Best for media and family
+						</td>
+					</tr>
+					<tr class="hover:bg-gray-100">
+						<td class="border border-gray-300 p-4">Work</td>
+						<td class="border border-gray-300 p-4">
+						   Laptop and accessories	
+						</td>
+						<td class="border border-gray-300 p-4">
+							Best for study and office
+						</td>
+					</tr>
+					<tr class="hover:bg-gray-100">
+						<td class="border border-gray-300 p-4">Home care</td>
+						<td class="border border-gray-300 p-4">
+							Fridge and washing machine	
+						</td>
+						<td class="border border-gray-300 p-4">
+							Best for daily house use
+						</td>
+					</tr>
+					<tr class="hover:bg-gray-100">
+						<td class="border border-gray-300 p-4">Cooking</td>
+						<td class="border border-gray-300 p-4">
+							Mixer and microwave	
+						</td>
+						<td class="border border-gray-300 p-4">
+						   Best for kitchen work
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="text-center mt-10">
+			<a href="contact.html"
+				class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500  hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 animate-bounce">
+				Need Help? Contact Us
+			</a>
+		</div>
+	</section>
+<!-- Newsletter -->
+<section class="bg-gray-100 py-12 px-4 md:px-8 lg:px-16">
+		<h2 class="text-2xl md:text-3xl font-bold text-center mb-8">
+			Join Newsletter			
+		</h2>
+		<form class="max-w-md mx-auto bg-white p-6 md:p-8 rounded-xl shadow-lg hover:-translate-y-2 transition duration-400">			
+			<div class="mb-5">
+				<label class="block mb-2 font-semibold">
+					Name
+				</label>
+				<input
+					type="text"
+					placeholder="Enter your name"
+					class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+			</div>
+			<div class="mb-6">
+				<label class="block mb-2 font-semibold">
+					Email
+				</label>
+				<input
+					type="email"
+					placeholder="Enter your email"
+					class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+			</div>
+			<div class="text-center">
+				<button
+					type="submit"
+					class="w-full md:w-auto bg-gradient-to-r from-blue-700 to-cyan-500  hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 animate-bounce ">
+					Subscribe
+				</button>
+			</div>
+		</form>
+	</section>
+<!--footer-->
+<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+		  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			  <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>
+				
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+
+</footer>
+	</body>
+</html>

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> MinnalMart - mobiles</title>
+		<link rel="icon" href ="img/mlogo.png">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+<body>
+<!-- nav header -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+    <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+        <div class="flex gap-20 px-10">
+            <span>🚚 Free Shipping on Orders ₹999+</span>
+            <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+            <span>⚡ Lightning Deals. Smarter Living</span>
+            <span>💳 No Cost EMI Available</span>
+            <span>↩ Easy 7 Days Return</span>
+        </div>
+    </div>
+</section>
+<!-- navbar -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="#" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="computer-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+			<a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>
+			<a href="Refrigerators.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Refrigerators</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- section 1 for hero mobiles -->
+<section class="p-10 bg-gray-200">
+  <!-- <h2 class="text-3xl font-bold text-center mb-10"> -->
+    <!-- Mobiles -->
+  <!-- </h2> -->
+	  <div class="mb-10">
+			<img src="img/PM_hero.png" class="w-full hover:shadow-2xl hover:-translate-y-2 transition duration-400  rounded-lg">
+	  </div>
+	  <div class="mb-10 text-center">
+		<!-- <h3 class="text-2xl font-bold mb-6 animate-bounce">Shop by Brands</h3> -->
+			<img src="img/Mobile_Brands.png" class="mx-auto hover:shadow-2xl hover:-translate-y-2 transition duration-400  w-full max-w-4xl">
+	  </div>
+	  <div class="mb-10">
+			<img src="img/Mbanner.png"
+			 class="w-full max-w-5xl mx-auto hover:shadow-2xl rounded-lg shadow transition hover:-translate-y-2 transition duration-400">
+	  </div>
+	<div class="mb-12 bg-gradient-to-r from-blue-700 to-cyan-500 p-8 rounded-lg text-center shadow-lg">
+		  <h2 class="text-3xl font-bold mb-4"> Combo Offers</h2>
+			<p class="text-lg mb-6">Buy a Smartphone & Get Exciting Gifts!</p>
+				<div class="grid md:grid-cols-3 gap-6 ">
+					<div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+					  <h3 class="font-bold">iPhone Offer</h3>
+					  <p>Buy iPhone → Get Free Earbuds 🎧</p>
+					</div>
+					<div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+					  <h3 class="font-bold">Samsung Combo</h3>
+					  <p>Buy Samsung → Free Temper Glass + Case 📱</p>
+					</div>
+					<div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+					  <h3 class="font-bold">Gaming Pack</h3>
+					  <p>Buy Gaming Phone → Free Cooling Fan ❄️</p>
+					</div>
+				</div>
+	</div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Apple -->
+		<div class="min-w-[250px] bg-white p-5 rounded border hover:shadow-2xl hover:-translate-y-2 transition duration-400  text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LASlVMdcb1nVmLKMz2sXPoFWOcG4AKnaO0l3aZu15g&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">iPhone 17 Pro Max</h3>
+		  <p class="text-sm text-gray-500">Latest Apple model | Warranty available</p>
+		  <p class="font-bold text-blue-700 text-lg">₹69,999</p>
+		  <p><del>₹79,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Samsung -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://www.designinfo.in/wp-content/uploads/2024/01/Samsung-Galaxy-S24-Ultra-256GB-Titanium-Violet-3.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Samsung Galaxy S23</h3>
+		  <p class="text-sm text-gray-500">Flagship performance</p>
+		  <p class="font-bold text-blue-700 text-lg">₹59,999</p>
+		  <p><del>₹69,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- OnePlus -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://media-ik.croma.com/Croma%20Assets/Communication/Mobiles/Images/323002_0_ZUlzFMogu.png"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">OnePlus 11</h3>
+		  <p class="text-sm text-gray-500">Fast & smooth</p>
+		  <p class="font-bold text-blue-700 text-lg">₹56,999</p>
+		  <p><del>₹64,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Xiaomi -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://vlebazaar.in/image/cache/catalog//B0C1GKQ79V/Redmi-Note-12-Ice-Blue-6GB-RAM-64GB-Storage-B0C1GKQ79V-1200x1200.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Redmi Note 12</h3>
+		  <p class="text-sm text-gray-500">Budget friendly</p>
+		  <p class="font-bold text-blue-700 text-lg">₹14,999</p>
+		  <p><del>₹18,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Realme -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ASMoTtdfzfQ7shD842jRIAwmOLVJfJUFhHua0qMjDQ&s=10"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Realme GT 7</h3>
+		  <p class="text-sm text-gray-500">Gaming performance</p>
+		  <p class="font-bold text-blue-700 text-lg">₹25,999</p>
+		  <p><del>₹30,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Vivo -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1722858590754/c64a4f632bb1ee8cb72ccf175580fe68.png"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Vivo V40</h3>
+		  <p class="text-sm text-gray-500">Camera focus</p>
+		  <p class="font-bold text-blue-700 text-lg">₹29,999</p>
+		  <p><del>₹34,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Oppo -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/oppo/494794317/0/vFe2KUxJZ7-bPfb9607T-OPPO-Reno16c-Twilight-Violet-12-256-494794317-i-1.jpg"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Oppo Reno 16c</h3>
+		  <p class="text-sm text-gray-500">Stylish design</p>
+		  <p class="font-bold text-blue-700 text-lg">₹27,999</p>
+		  <p><del>₹32,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+		<!-- Pixel -->
+		<div class="min-w-[250px] bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded border text-center shadow-sm hover:shadow-lg transition">
+		  <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/image_P9_2024Q2_Peony_LT_T-Shot_r.width-500.format-webp_iwsszqn.webp"
+			   class="mx-auto h-40 object-contain mb-4">
+		  <h3 class="text-lg font-bold">Google Pixel 9</h3>
+		  <p class="text-sm text-gray-500">Pure Android</p>
+		  <p class="font-bold text-blue-700 text-lg">₹49,999</p>
+		  <p><del>₹59,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+		  <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+		</div>
+  </div>
+</section>
+<!-- i-phone section 2 -->
+<section class="bg-gray-200 p-10">
+	  <div class="text-center mb-8">
+		<h2 class="text-3xl font-bold text-gray-800">Apple iPhones</h2>
+	  </div>
+	  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+			<!-- iPhone 15 Pro Max -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://m.media-amazon.com/images/I/81fxjeu8fdL._SL1500_.jpg"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone 15 Pro Max</h3>
+			  <p>256GB | Titanium</p>
+			  <p class="font-bold text-blue-700 text-lg">₹1,59,900</p>
+			  <p><del>₹1,79,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+			<!-- iPhone 15 -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://m.media-amazon.com/images/I/71d7rfSl0wL._SL1500_.jpg"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone 15</h3>
+			  <p>128GB | Black</p>
+			  <p class="font-bold text-blue-700 text-lg">₹79,900</p>
+			  <p><del>₹89,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+			<!-- iPhone 14 -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._SL1500_.jpg"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone 14</h3>
+			  <p>128GB | Blue</p>
+			  <p class="font-bold text-blue-700 text-lg">₹69,900</p>
+			  <p><del>₹79,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+			<!-- iPhone 13 -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://m.media-amazon.com/images/I/61-r9zOKBCL._SL1500_.jpg"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone 13</h3>
+			  <p>128GB | Midnight</p>
+			  <p class="font-bold text-blue-700 text-lg">₹59,900</p>
+			  <p><del>₹69,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+			<!-- iPhone 12 -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMlDD0NjWVerza2YP0Szaly9tMYAp_bCwf6ACXv7e4hw&s"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone 12</h3>
+			  <p>64GB | White</p>
+			  <p class="font-bold text-blue-700 text-lg">₹49,900</p>
+			  <p><del>₹59,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+			<!-- iPhone SE -->
+			<div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+			  <img src="https://m.media-amazon.com/images/I/61TOWf11+jL._SL1500_.jpg"
+				   class="mx-auto h-40 object-contain mb-4">
+			  <h3 class="text-xl font-bold">iPhone SE (2022)</h3>
+			  <p>64GB | Red</p>
+			  <p class="font-bold text-blue-700 text-lg">₹29,900</p>
+			  <p><del>₹39,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+			  <p class="mt-3">
+				<a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+				  Add Cart
+				</a>
+			  </p>
+			</div>
+	</div>
+<!-- i phone combo offers  -->
+<section class="bg-gray-200 p-10">
+	  <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+		iPhone Special Offers
+	  </h2>
+
+	  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+		<!-- offer prod 1 -->
+		<div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+		  <!-- Main Image -->
+		  <img src="https://m.media-amazon.com/images/I/81fxjeu8fdL._SL1500_.jpg"
+			   class="w-full h-40 object-contain mb-4">
+
+		  <!-- offer Items -->
+		  <div class="flex justify-center gap-3">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+				 class="w-16 h-16 object-contain border rounded p-1">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+				 class="w-16 h-16 object-contain border rounded p-1">
+		  </div>
+
+		  <!-- offer info-->
+		  <div class="text-center mt-4">
+			<h3 class="font-bold text-lg">iPhone 15 Pro Max</h3>
+			<p class="text-gray-500 text-sm">+ AirPods + Charger</p>
+			<p class="text-green-600 font-semibold">25% OFF</p>
+			<p class="text-blue-600 font-bold text-lg">₹1,19,900</p>
+
+			<button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+			  Buy Now
+			</button>
+		  </div>
+		</div>
+
+		<!-- offer prod 2 -->
+		<div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+		  <img src="https://m.media-amazon.com/images/I/71ZDY57yTQL._SL1500_.jpg"
+			   class="w-full h-40 object-contain mb-4">
+
+		  <div class="flex justify-center gap-3">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJySZotutF7BR5bnA7WZ6NIxAEVm3szAu9JXxxUn2gvQ&s"
+				 class="w-16 h-16 object-contain border rounded p-1">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+				 class="w-16 h-16 object-contain border rounded p-1">
+		  </div>
+
+		  <div class="text-center mt-4">
+			<h3 class="font-bold text-lg">iPhone 14 Pro</h3>
+			<p class="text-gray-500 text-sm">+ Case + Charger</p>
+			<p class="text-green-600 font-semibold">20% OFF</p>
+			<p class="text-blue-600 font-bold text-lg">₹99,900</p>
+
+			<button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+			  Buy Now
+			</button>
+		  </div>
+		</div>
+		<!-- Offer Prod 3 -->
+		<div class="bg-white p-5 hover:shadow-2xl hover:-translate-y-2 transition duration-400  rounded-xl shadow-md w-72">
+
+		  <img src="https://m.media-amazon.com/images/I/61l9ppRIiqL._SL1500_.jpg"
+			   class="w-full h-40 object-contain mb-4">
+
+		  <div class="flex justify-center gap-3">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIi_U1g2zLrHmbtLWQS0RQZQedVJ4mraLIEyyINJBEg&s=10"
+				 class="w-16 h-16 object-contain border rounded p-1">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+				 class="w-16 h-16 object-contain border rounded p-1">
+		  </div>
+
+		  <div class="text-center mt-4">
+			<h3 class="font-bold text-lg">iPhone 13</h3>
+			<p class="text-gray-500 text-sm">+ EarPods + Cover</p>
+			<p class="text-green-600 font-semibold">30% OFF</p>
+			<p class="text-blue-600 font-bold text-lg">₹69,900</p>
+
+			<button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+			  Buy Now
+			</button>
+		  </div>
+		</div>
+
+	  </div>
+
+	</section>
+	</section>
+
+<!-- section for samsung 3 -->
+<section class="bg-gray-200 p-10">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Samsung Mobiles</h2>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+
+    <!-- S23 Ultra -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.2HFtW-tmli-lclS2Nq4ruQHaHk?w=178&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy S23 Ultra</h3>
+      <p>256GB | Black</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,09,900</p>
+      <p><del>₹1,29,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded  ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- S22 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.BaQNA-aVIDmL1VmewqIvLwHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy S22</h3>
+      <p>128GB | White</p>
+      <p class="font-bold text-blue-700 text-lg">₹69,900</p>
+      <p><del>₹79,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- S21 FE -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.oVV3XmxM95FZ2zOwN82FHAHaHa?w=218&h=218&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy S21 FE</h3>
+      <p>128GB | Green</p>
+      <p class="font-bold text-blue-700 text-lg">₹49,900</p>
+      <p><del>₹59,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- A54 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.flyD5bQRjdgvvSf4i-WNEQHaEK?w=281&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy A54</h3>
+      <p>128GB | Blue</p>
+      <p class="font-bold text-blue-700 text-lg">₹39,900</p>
+      <p><del>₹45,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- A34 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.PXMGmuAWuE-v9EeoyeslXgHaHa?w=183&h=183&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy A34</h3>
+      <p>128GB | Black</p>
+      <p class="font-bold text-blue-700 text-lg">₹29,900</p>
+      <p><del>₹34,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- M34 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.SmYFsiMZs45_8B1fHjqMEwHaHa?r=0&pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Galaxy M34</h3>
+      <p>128GB | Green</p>
+      <p class="font-bold text-blue-700 text-lg">₹18,900</p>
+      <p><del>₹22,900</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Samc combo offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      Samsung Combo Offers
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+      <!-- Samsung offer 1 -->
+      <div class="bg-white p-5 rounded-xl hover:shadow-2xl hover:-translate-y-2 transition duration-400  shadow-md w-72">
+        <img src="https://th.bing.com/th/id/OIP.2HFtW-tmli-lclS2Nq4ruQHaHk?w=178&h=182&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.a9N3N_5x2bGUc7Tc4DOz5QHaHu?w=179&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">S23 Ultra</h3>
+          <p class="text-gray-500 text-sm">+ Buds + Charger</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹99,900</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Samsung offer 2 -->
+      <div class="bg-white p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400  w-72">
+        <img src="https://th.bing.com/th/id/OIP.BaQNA-aVIDmL1VmewqIvLwHaHa?w=187&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://m.media-amazon.com/images/I/816vKA8AP1L._AC_.jpg"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.a9N3N_5x2bGUc7Tc4DOz5QHaHu?w=179&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Galaxy S22</h3>
+          <p class="text-gray-500 text-sm">+ Case + Charger</p>
+          <p class="text-green-600 font-semibold">20% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹59,900</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Samsung offer 3-->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400  ">
+        <img src="https://th.bing.com/th/id/OIP.flyD5bQRjdgvvSf4i-WNEQHaEK?w=281&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIi_U1g2zLrHmbtLWQS0RQZQedVJ4mraLIEyyINJBEg&s=10"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://bharatcase.com/cdn/shop/files/AA10929854_1_4c0a3c9e-ec9a-4c07-8aff-b614633f210f_370x.jpg?v=1736150874"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Galaxy A54</h3>
+          <p class="text-gray-500 text-sm">+ Earbuds + Cover</p>
+          <p class="text-green-600 font-semibold">30% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹29,900</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</section>
+
+<!-- section for Gaming 4-->
+<section class="bg-gray-200 p-10">
+
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Gaming Mobiles</h2>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+
+    <!-- ROG Phone 7 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.UY-b-LL275Ur6umcbGM0JgHaFc?w=226&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">ROG Phone 7</h3>
+      <p>16GB | Gaming Beast</p>
+      <p class="font-bold text-blue-700 text-lg">₹79,999</p>
+      <p><del>₹89,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- iQOO 12 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.lOg7NiYBDxEWaMPx0bqmyAHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">iQOO 12</h3>
+      <p>12GB | Snapdragon</p>
+      <p class="font-bold text-blue-700 text-lg">₹52,999</p>
+      <p><del>₹59,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- OnePlus 12 -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.4D36rXtqDhNT_IOtsms4rAHaHa?w=156&h=150&c=6&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">OnePlus 12</h3>
+      <p>16GB | 120Hz</p>
+      <p class="font-bold text-blue-700 text-lg">₹64,999</p>
+      <p><del>₹72,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Red Magic -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://www.androidheadlines.com/wp-content/uploads/2022/12/Red-Magic-8-Pro-series-image-1.jpg"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Red Magic 8 Pro</h3>
+      <p>Gaming Cooling</p>
+      <p class="font-bold text-blue-700 text-lg">₹58,999</p>
+      <p><del>₹65,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Realme GT -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.i-lain-bTZLDn5U59xaDXAHaEK?w=287&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Realme GT 6</h3>
+      <p>144Hz Display</p>
+      <p class="font-bold text-blue-700 text-lg">₹36,999</p>
+      <p><del>₹42,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Poco -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.xIvzgjPeEINslgI4wiy4ogAAAA?r=0&pid=ImgDet&w=184&h=284&c=7&dpr=1.3&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Poco F6</h3>
+      <p>Performance King</p>
+      <p class="font-bold text-blue-700 text-lg">₹29,999</p>
+      <p><del>₹34,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Gaming Combo Offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      Gaming Combo Offers
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+      <!-- Offer 1 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://th.bing.com/th/id/OIP.UY-b-LL275Ur6umcbGM0JgHaFc?w=226&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://m.media-amazon.com/images/I/61LIAeXS26L._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">ROG Combo</h3>
+          <p class="text-gray-500 text-sm">+ Headset + Cooler</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹69,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://th.bing.com/th/id/OIP.lOg7NiYBDxEWaMPx0bqmyAHaFj?w=267&h=200&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.4DsCtglYi1r1VvNe0g2ExwHaIF?w=157&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://dlcdnwebimgs.asus.com/gain/3C53BB35-AE89-4715-B752-B27AF990409C"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">iQOO Combo</h3>
+          <p class="text-gray-500 text-sm">+ Earbuds + Charger</p>
+          <p class="text-green-600 font-semibold">20% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹49,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://www.androidheadlines.com/wp-content/uploads/2022/12/Red-Magic-8-Pro-series-image-1.jpg"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://www.nubiamart.com/media/wysiwyg/Nubia_Red_Magic_8S_Pro/Heat_Dissipation_Magnetic_Gaming_Back_Cover_Case_For_RedMagic_8_Pro_pd_4_.jpg"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Red Magic 8 Pro Combo</h3>
+          <p class="text-gray-500 text-sm">+ Buds + Case</p>
+          <p class="text-green-600 font-semibold">30% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹59,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</section>
+
+<!-- section for budget mobiles 5  -->
+
+<section class="bg-gray-200 p-10">
+
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Budget Mobiles</h2>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+
+    <!-- Oppo -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIF.d1OKRXk7zablaKVbj6BUgQ?w=128&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Oppo A78</h3>
+      <p>8GB | Smooth UI</p>
+      <p class="font-bold text-blue-700 text-lg">₹14,999</p>
+      <p><del>₹17,999</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Vivo -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://www.triveniworld.com/cdn/shop/products/vivo-t1-5g-128-gb-6-gb-ram-black-refurbished-triveni-world-2.jpg?v=1736263964"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Vivo T1 5G</h3>
+      <p>6GB | 5G Ready</p>
+      <p class="font-bold text-blue-700 text-lg">₹13,999</p>
+      <p><del>₹16,999</del> <span class="text-green-700 font-bold">18% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- OnePlus -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.2FRo2tnGlxT3zZgl4-gj5AHaJ3?w=147&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">OnePlus Nord CE 3 Lite</h3>
+      <p>8GB | Fast Charge</p>
+      <p class="font-bold text-blue-700 text-lg">₹19,999</p>
+      <p><del>₹22,999</del> <span class="text-green-700 font-bold">15% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Poco -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.WCRtVYtOxOrlwA0vxIJwxAHaHa?w=138&h=150&c=6&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Poco M6 Pro</h3>
+      <p>Performance</p>
+      <p class="font-bold text-blue-700 text-lg">₹10,999</p>
+      <p><del>₹13,999</del> <span class="text-green-700 font-bold">22% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Motorola -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/mobile/z/1/c/-original-imagt5uhcnfy66wa.jpeg?q=90"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Moto G54</h3>
+      <p>Clean Android</p>
+      <p class="font-bold text-blue-700 text-lg">₹12,999</p>
+      <p><del>₹15,999</del> <span class="text-green-700 font-bold">19% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Nokia -->
+    <div class="bg-white p-5 rounded border text-center hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+      <img src="https://th.bing.com/th/id/OIP.ChOI9Zmx4BObXV_JEOFRAwHaG2?w=173&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4">
+      <h3 class="text-xl font-bold">Nokia G42 5G</h3>
+      <p>Durable Build</p>
+      <p class="font-bold text-blue-700 text-lg">₹11,999</p>
+      <p><del>₹14,999</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded ">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- Budget Combo Offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-3xl font-bold text-gray-800 text-center mb-10">
+      Budget Combo Offers
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+
+      <!-- Offer 1 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://th.bing.com/th/id/OIF.d1OKRXk7zablaKVbj6BUgQ?w=128&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.wdr8H0b6ffJGtAl-ymF5VQHaIe?w=168&h=192&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://m.media-amazon.com/images/I/61LIAeXS26L._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Oppo Combo</h3>
+          <p class="text-gray-500 text-sm">+ Earbuds + Case</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹12,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 2 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://www.triveniworld.com/cdn/shop/products/vivo-t1-5g-128-gb-6-gb-ram-black-refurbished-triveni-world-2.jpg?v=1736263964"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.vrpUi78duiuF4IMmecv_NgAAAA?w=133&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.B3wDcU8XGkcfqsHZXc3HAQHaGf?w=236&h=207&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Vivo Combo</h3>
+          <p class="text-gray-500 text-sm">+ Buds + Charger</p>
+          <p class="text-green-600 font-semibold">20% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹11,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400 ">
+        <img src="https://th.bing.com/th/id/OIP.WCRtVYtOxOrlwA0vxIJwxAHaHa?w=138&h=150&c=6&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+             class="w-full h-40 object-contain mb-4">
+
+        <div class="flex justify-center gap-3">
+          <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://m.media-amazon.com/images/I/61LIAeXS26L._SL1500_.jpg"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Poco Combo</h3>
+          <p class="text-gray-500 text-sm">+ Case + Earphones</p>
+          <p class="text-green-600 font-semibold">30% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹9,999</p>
+
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+	<!--  Special iPhone Offers -->
+<div class="mt-12">
+  <h2 class="text-3xl font-bold text-center mb-8">Hot iPhone Deals</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Offer 1 -->
+    <div class="bg-white p-5 rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition text-center">
+      <img src="https://m.media-amazon.com/images/I/81fxjeu8fdL._SL1500_.jpg"
+           class="mx-auto h-40 mb-3">
+      <h3 class="font-bold text-lg">iPhone 15 Pro Max</h3>
+
+      <!-- combo images -->
+      <div class="flex justify-center gap-3 my-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10" class="h-10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10" class="h-10">
+      </div>
+
+      <p class="text-green-700 font-bold animate-bounce">🎁 Free Earbuds + Charger</p>
+      <p class="text-blue-700 font-bold text-lg">₹1,49,900</p>
+      <p><del>₹1,79,900</del> (25% OFF)</p>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="bg-white p-5 rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition text-center">
+      <img src="https://m.media-amazon.com/images/I/71d7rfSl0wL._SL1500_.jpg"
+           class="mx-auto h-40 mb-3">
+      <h3 class="font-bold text-lg">iPhone 15</h3>
+
+      <div class="flex justify-center gap-3 my-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJySZotutF7BR5bnA7WZ6NIxAEVm3szAu9JXxxUn2gvQ&s" class="h-10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIi_U1g2zLrHmbtLWQS0RQZQedVJ4mraLIEyyINJBEg&s=10" class="h-10">
+      </div>
+
+      <p class="text-green-700 font-bold animate-bounce">🎁 Free AirPods + Case</p>
+      <p class="text-blue-700 font-bold text-lg">₹74,900</p>
+      <p><del>₹89,900</del> (20% OFF)</p>
+    </div>
+
+    <!-- Offer 3 -->
+    <div class="bg-white p-5 rounded-xl shadow hover:shadow-2xl hover:-translate-y-2 transition text-center">
+      <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._SL1500_.jpg"
+           class="mx-auto h-40 mb-3">
+      <h3 class="font-bold text-lg">iPhone 14</h3>
+
+      <div class="flex justify-center gap-3 my-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10" class="h-10">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIi_U1g2zLrHmbtLWQS0RQZQedVJ4mraLIEyyINJBEg&s=10" class="h-10">
+      </div>
+
+      <p class="text-green-700 font-bold animate-bounce">🎁 Free Charger + Earbuds</p>
+      <p class="text-blue-700 font-bold text-lg">₹64,900</p>
+      <p><del>₹79,900</del> (18% OFF)</p>
+    </div>
+
+  </div>
+</div>
+	
+  </section>
+
+</section>
+<!-- Mobiles Offers and Benefits 6 -->
+<section class="p-10 bg-gray-200">
+		<h2 class="text-3xl font-bold text-center mb-8">Mobiles Offers and Benefits</h2>
+		<div class="grid md:grid-cols-3 gap-5 text-center">
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 "><h3 class="text-2xl font-bold">Exchange Offer</h3><p>Exchange old product and save more.</p></div>
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 md:animate-bounce rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 "><h3 class="text-2xl font-bold">EMI Available</h3><p>Easy monthly payment details available.</p></div>
+			<div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 "><h3 class="text-2xl font-bold">Warranty Support</h3><p>Brand warranty and service information.</p></div>
+		</div>
+</section>
+<!-- Section 7 -->
+<section class="px-4 py-12 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-10">
+        Shopping Guide
+    </h2>
+    <h3 class="text-xl md:text-2xl font-bold mb-6">
+        Choose Correct Product
+    </h3>
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+        <table class="w-full min-w-[650px] bg-white border border-gray-300 text-center">
+            <thead>
+                <tr class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+                    <th class="border border-gray-300 p-4">Need</th>
+                    <th class="border border-gray-300 p-4">Suggested Product</th>
+                    <th class="border border-gray-300 p-4">Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Low Budget</td>
+                    <td class="border border-gray-300 p-4">Basic model</td>
+                    <td class="border border-gray-300 p-4">
+                       Good for simple daily use
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Medium Budget</td>
+                    <td class="border border-gray-300 p-4">
+                        Popular model
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                        Best value for money
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">High Budget</td>
+                    <td class="border border-gray-300 p-4">
+                        Premium model
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                       Advanced feature and long life
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4">Family Use</td>
+                    <td class="border border-gray-300 p-4">
+                        Combo plan
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                        Useful for multiple needs
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center mt-10">
+        <a href="contact.html"
+            class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 animate-bounce">
+            Need Help? Contact Us
+        </a>
+    </div>
+</section>
+<!--footer-->
+	<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+		  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			  <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>			
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+		</footer>
+	</body>
+</html>
+	

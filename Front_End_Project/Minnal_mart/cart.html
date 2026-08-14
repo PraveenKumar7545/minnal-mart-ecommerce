@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> MinnalMart - AC</title>
+		<link rel="icon" href ="img/mlogo.png">
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>	
+	</head>
+	<body>
+<!-- nav header	 -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+  <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+    <div class="flex gap-20 px-10">
+      <span>🚚 Free Shipping on Orders ₹999+</span>
+      <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+      <span>⚡ Lightning Deals. Smarter Living</span>
+      <span>💳 No Cost EMI Available</span>
+      <span>↩ Easy 7 Days Return</span>
+    </div>
+  </div>
+</section>
+<!-- navbar  -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+                		           
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="tv.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">TVs</a>
+            <a href="audio.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="computer-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+             
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+            <a href="tv.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">TVs</a>
+            <a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>			
+            <a href="Refrigerators.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Refrigerators</a>			
+			<a href="audio.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav> 
+<!-- Cart Hero Section -->
+<section class="relative h-[90vh] overflow-hidden">
+
+    <!-- Background Image -->
+    <img src="https://lh3.googleusercontent.com/d/1poCjjttv0C6TvH3lxNb0o-yGYFiXNJtO"
+         alt="Shopping Cart Banner"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+
+    <!-- Content -->
+    <div class="absolute inset-0 flex items-center">
+
+        <div class="max-w-7xl mx-auto w-full px-6 lg:px-16">
+
+            <div class="max-w-2xl text-white">
+
+                <p class="uppercase tracking-[6px] text-cyan-400 font-semibold mb-4">
+                    Shopping Cart
+                </p>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Review Your
+                    <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                        Shopping Cart
+                    </span>
+                </h1>
+
+                <p class="mt-6 text-lg md:text-xl text-gray-200 leading-relaxed">
+                    Your favorite electronics are almost yours. Review your selected products, check your order summary, and complete your purchase with secure payments and fast delivery from MinnalMart.
+                </p>
+
+                <!-- Buttons -->
+                <div class="flex flex-wrap gap-4 mt-8">
+
+                    <a href="products.html"
+                       class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 font-semibold hover:scale-105 duration-300 shadow-lg">
+                        Continue Shopping
+                    </a>
+
+                    <a href="#cart"
+                       class="px-8 py-3 rounded-lg border-2 border-white font-semibold hover:bg-white hover:text-blue-700 duration-300">
+                        View Cart
+                    </a>
+
+                </div>
+
+                <!-- Highlights -->
+                <div class="flex flex-wrap gap-8 mt-12">
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            100%
+                        </h3>
+                        <p class="text-gray-300">
+                            Secure Checkout
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            Fast
+                        </h3>
+                        <p class="text-gray-300">
+                            Delivery Service
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-3xl font-bold text-cyan-400">
+                            24/7
+                        </h3>
+                        <p class="text-gray-300">
+                            Customer Support
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Section 2 : Shopping Cart -->
+<section id="cart" class="py-20 bg-gray-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+
+            <p class="uppercase tracking-[5px] text-cyan-600 font-semibold">
+                Your Cart
+            </p>
+
+            <h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+                Shopping Cart Summary
+            </h2>
+
+            <p class="text-gray-600 mt-4">
+                Review your selected products before proceeding to checkout.
+            </p>
+
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+
+            <!-- Cart Products -->
+            <div class="lg:col-span-2 space-y-6">
+
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl duration-300">
+
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600"
+                    class="w-40 h-40 object-cover rounded-xl">
+
+                    <div class="flex-1">
+
+                        <h3 class="text-2xl font-bold text-gray-900">
+                            Premium Smartphone
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+                            256GB • 12GB RAM • Blue
+                        </p>
+
+                        <p class="text-yellow-500 mt-2">
+                            ★★★★★
+                        </p>
+
+                        <h4 class="text-3xl font-bold text-blue-700 mt-4">
+                            ₹69,999
+                        </h4>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <p class="font-semibold mb-2">
+                            Quantity
+                        </p>
+
+                        <div class="flex items-center border rounded-lg overflow-hidden">
+
+                            <button class="px-4 py-2 bg-gray-200">-</button>
+
+                            <span class="px-5 py-2">1</span>
+
+                            <button class="px-4 py-2 bg-gray-200">+</button>
+
+                        </div>
+
+                        <button class="mt-5 text-red-500 font-semibold hover:text-red-700">
+                            Remove
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Product 2 -->
+
+                <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl duration-300">
+
+                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600"
+                    class="w-40 h-40 object-cover rounded-xl">
+
+                    <div class="flex-1">
+
+                        <h3 class="text-2xl font-bold text-gray-900">
+                            Ultra Laptop
+                        </h3>
+
+                        <p class="text-gray-500 mt-2">
+                            Intel i7 • 16GB RAM • 512GB SSD
+                        </p>
+
+                        <p class="text-yellow-500 mt-2">
+                            ★★★★★
+                        </p>
+
+                        <h4 class="text-3xl font-bold text-blue-700 mt-4">
+                            ₹84,999
+                        </h4>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <p class="font-semibold mb-2">
+                            Quantity
+                        </p>
+
+                        <div class="flex items-center border rounded-lg overflow-hidden">
+
+                            <button class="px-4 py-2 bg-gray-200">-</button>
+
+                            <span class="px-5 py-2">1</span>
+
+                            <button class="px-4 py-2 bg-gray-200">+</button>
+
+                        </div>
+
+                        <button class="mt-5 text-red-500 font-semibold hover:text-red-700">
+                            Remove
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Order Summary -->
+
+            <div class="bg-white rounded-2xl shadow-lg p-8 h-fit sticky top-28">
+
+                <h3 class="text-3xl font-bold text-gray-900 mb-8">
+                    Order Summary
+                </h3>
+
+                <div class="flex justify-between mb-4">
+
+                    <span>Subtotal</span>
+
+                    <span>₹1,54,998</span>
+
+                </div>
+
+                <div class="flex justify-between mb-4">
+
+                    <span>Shipping</span>
+
+                    <span class="text-green-600">
+                        Free
+                    </span>
+
+                </div>
+
+                <div class="flex justify-between mb-4">
+
+                    <span>Discount</span>
+
+                    <span class="text-red-500">
+                        -₹5,000
+                    </span>
+
+                </div>
+
+                <hr class="my-6">
+
+                <div class="flex justify-between text-2xl font-bold">
+
+                    <span>Total</span>
+
+                    <span class="text-blue-700">
+                        ₹1,49,998
+                    </span>
+
+                </div>
+
+                <input type="text"
+                placeholder="Enter Coupon Code"
+                class="w-full mt-8 border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-cyan-500">
+
+                <button class="w-full mt-4 bg-gradient-to-r from-blue-700 to-cyan-500 text-white py-3 rounded-lg font-semibold hover:scale-105 duration-300">
+
+                    Apply Coupon
+
+                </button>
+
+                <button class="w-full mt-5 bg-black text-white py-4 rounded-lg text-lg font-bold hover:bg-gray-800 duration-300">
+
+                    Proceed to Checkout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Section 3 -->
+
+<section class="py-20 bg-white">
+
+	<div class="text-center mb-12">
+		<p class="text-gray-500 font-bold uppercase tracking-[5px]">Why Choose Us</p>
+		<h2 class="text-4xl font-extrabold text-gray-900 mt-3">Why Buy Air Conditioners from MinnalMart?</h2>
+		<p class="text-gray-500 mt-4">Get reliable cooling solutions with trusted brands and excellent customer support.</p>
+	</div>
+
+	<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+		<div class="bg-gray-100 p-8 rounded-xl text-center hover:shadow-2xl hover:-translate-y-2 duration-300">
+			<img src="https://www.image2url.com/r2/default/gifs/1784136037990-914069e7-4167-461a-9a56-ce435a961af5.gif" class="w-30 h-30 mx-auto mb-5">
+			<h3 class="text-xl font-bold mb-3">Expert Installation</h3>
+			<p class="text-gray-600">Professional installation service for hassle-free AC setup.</p>
+		</div>
+
+		<div class="bg-gray-100 p-8 rounded-xl text-center hover:shadow-2xl hover:-translate-y-2 duration-300">
+			<img src="https://www.image2url.com/r2/default/gifs/1784136085660-d0c33f0b-b020-4846-b54a-4e4902aec258.gif" class="w-30 h-30 mx-auto mb-5">
+			<h3 class="text-xl font-bold mb-3">Fast Home Delivery</h3>
+			<p class="text-gray-600">Quick and secure delivery across India with safe packaging.</p>
+		</div>
+
+		<div class="bg-gray-100 p-8 rounded-xl text-center hover:shadow-2xl hover:-translate-y-2 duration-300">
+			<img src="https://www.image2url.com/r2/default/gifs/1784136125256-6a9d0fd5-e4aa-44b7-98d0-1c7e0e4913a5.gif" class="w-30 h-30 mx-auto mb-5">
+			<h3 class="text-xl font-bold mb-3">Energy Efficient Models</h3>
+			<p class="text-gray-600">Choose inverter ACs that save electricity without reducing cooling.</p>
+		</div>
+
+		<div class="bg-gray-100 p-8 rounded-xl text-center hover:shadow-2xl hover:-translate-y-2 duration-300">
+			<img src="https://www.image2url.com/r2/default/gifs/1784136159751-e4276590-c4f0-4d40-9004-d1076dc3e3a9.gif" class="w-40 h-40 mx-auto mb-5">
+			<h3 class="text-xl font-bold mb-3">Official Brand Warranty</h3>
+			<p class="text-gray-600">Enjoy genuine manufacturer warranty and dependable after-sales support.</p>
+		</div>
+
+	</div>
+
+</section>
+<!-- Section 4 : Call To Action -->
+<section class="py-20 bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500">
+
+    <div class="max-w-6xl mx-auto px-6 text-center text-white">
+
+        <p class="uppercase tracking-[5px] font-semibold text-cyan-200">
+            Complete Your Order
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-extrabold mt-4">
+            You're Just One Click Away!
+        </h2>
+
+        <p class="mt-6 max-w-3xl mx-auto text-lg text-blue-100 leading-8">
+            Thank you for shopping with MinnalMart. Review your cart, complete your secure checkout, and enjoy fast delivery with trusted products and excellent customer support.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-5 mt-10">
+
+            <a href="products.html"
+               class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 duration-300">
+                Continue Shopping
+            </a>
+
+            <a href="#cart"
+               class="border-2 border-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-blue-700 duration-300">
+                Proceed to Checkout
+            </a>
+
+        </div>
+
+        <!-- /*<div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16"> -->
+
+            <!-- <div> -->
+                <!-- <div class="text-5xl mb-3">🚚</div> -->
+                <!-- <h3 class="font-bold text-xl">Fast Delivery</h3> -->
+                <!-- <p class="text-blue-100 mt-2"> -->
+                    <!-- Safe & quick shipping across India. -->
+                <!-- </p> -->
+            <!-- </div> -->
+
+            <!-- <div> -->
+                <!-- <div class="text-5xl mb-3">🔒</div> -->
+                <!-- <h3 class="font-bold text-xl">Secure Payments</h3> -->
+                <!-- <p class="text-blue-100 mt-2"> -->
+                    <!-- Trusted payment methods for worry-free shopping. -->
+                <!-- </p> -->
+            <!-- </div> -->
+
+            <!-- <div> -->
+                <!-- <div class="text-5xl mb-3">⭐</div> -->
+                <!-- <h3 class="font-bold text-xl">Premium Quality</h3> -->
+                <!-- <p class="text-blue-100 mt-2"> -->
+                    <!-- Genuine products from top electronics brands. -->
+                <!-- </p> -->
+            <!-- </div> -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Section 7 - Customer Reviews -->
+<section class="p-10 bg-gray-100">
+
+    <h2 class="text-3xl font-bold text-center mb-10">Customer Reviews</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- Review 1 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Amazing quality mobiles at best price. Delivery was very fast.</p>
+            <h4 class="mt-3 font-bold">Praveen Kumar </h4>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Laptop deals are really good. Worth the money.</p>
+            <h4 class="mt-3 font-bold">Sonai Rahul</h4>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Customer support is very helpful and quick response.</p>
+            <h4 class="mt-3 font-bold">Avinash</h4>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Home appliances quality is excellent. Happy purchase.</p>
+            <h4 class="mt-3 font-bold">Bastin</h4>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★★</p>
+            <p class="mt-2 text-gray-700">Best website for electronics. Clean UI and easy to use.</p>
+            <h4 class="mt-3 font-bold">Siva Suriya Rajan</h4>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="bg-white p-5 rounded-lg shadow-md hover:shadow-xl transition">
+            <p class="text-yellow-500 text-lg">★★★★☆</p>
+            <p class="mt-2 text-gray-700">Good offers and fast checkout process.</p>
+            <h4 class="mt-3 font-bold">Goamthi Harish</h4>
+        </div>
+
+    </div>
+
+</section>
+		<!--footer-->
+		<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+		  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			   <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>
+				
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+
+		</footer>
+	
+</body>
+</html>

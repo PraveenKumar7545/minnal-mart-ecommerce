@@ -1,0 +1,1453 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title> MinnalMart - laptop</title>
+		<link rel="icon" href ="img/mlogo.png">
+		
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		
+	</head>
+	 
+	<body>
+	
+<!-- nav header -->
+<section class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white overflow-hidden">
+  <div class="whitespace-nowrap py-2 text-sm font-medium animate-pulse">
+    <div class="flex gap-20 px-10">
+      <span>🚚 Free Shipping on Orders ₹999+</span>
+      <span>🎁 Flat ₹300 OFF on ₹1999 | Code: MM300</span>
+      <span>⚡ Lightning Deals. Smarter Living</span>
+      <span>💳 No Cost EMI Available</span>
+      <span>↩ Easy 7 Days Return</span>
+    </div>
+  </div>
+</section>
+<!-- navbar -->
+<nav class="sticky top-0 z-50 bg-black border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-2 md:px-3">
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 shrink-0">
+        <img src="img/mlogo.png" class="w-10 h-10 md:w-14 md:h-14 rounded-lg" alt="MinnalMart Logo">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black tracking-wider text-white">
+            Minnal<span class="text-amber-400">Mart</span>
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden lg:flex items-center gap-8 font-semibold text-white">
+
+        <!-- Home Dropdown -->
+        <li class="relative group">
+          <a href="index.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Home
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="index.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">Home Page</a>
+            <a href="index.html#featured" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Featured</a>
+            <a href="index.html#trending" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Trending Now</a>
+            <a href="index.html#deals" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Today's Deals</a>
+          </div>
+        </li>
+
+        <!-- Products Dropdown -->
+        <li class="relative group">
+          <a href="products.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Products
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="products.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Products</a>
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Mobiles</a>
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptops</a>
+            <a href="#" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Audio Devices</a>
+          </div>
+        </li>
+
+        <!-- Mobiles Dropdown -->
+        <li class="relative group">
+          <a href="mobiles.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Mobiles
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Mobiles</a>
+            <a href="mobiles.html#iphone" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">iPhones</a>
+            <a href="mobiles.html#samsung" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Samsung Galaxy</a>
+            <a href="mobiles.html#gaming" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Phones</a>
+            <a href="mobiles.html#budget" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Phones</a>
+            <a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Phone Accessories</a>
+          </div>
+        </li>
+
+        <!-- Laptops Dropdown -->
+        <li class="relative group">
+          <a href="laptop.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Laptops
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Laptops</a>
+            <a href="laptop.html#macbooks" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">MacBooks</a>
+            <a href="laptop.html#dell" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Dell Laptops</a>
+            <a href="laptop.html#gaming-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Gaming Laptops</a>
+            <a href="laptop.html#budget-laptops" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Budget Laptops</a>
+            <a href="computer-accessories.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Laptop Accessories</a>
+          </div>
+        </li>
+
+        <!-- Offers Dropdown -->
+        <li class="relative group">
+          <a href="offers.html" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            Offers
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400 font-medium">All Offers</a>
+            <a href="offers.html#lightning" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Lightning Deals</a>
+            <a href="offers.html#bank" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Bank Offers</a>
+            <a href="offers.html#emi" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">No Cost EMI</a>
+            <a href="offers.html#clearance" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Clearance Sale</a>
+          </div>
+        </li>
+
+        <!-- More Dropdown -->
+        <li class="relative group">
+          <a href="#" class="flex items-center hover:text-amber-400 duration-300 py-7">
+            More
+            <svg class="ml-1 w-3 h-3 group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <div class="absolute left-0 top-full w-52 bg-gray-900 text-white shadow-xl rounded-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <a href="home-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Home Appliances</a>
+            <a href="kitchen-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Kitchen</a>
+            <a href="small-appliances.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Small Appliances</a>
+            <a href="Ac.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">AC</a>
+            <a href="Refrigerators.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Refrigerators</a>
+            <a href="about.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">About Us</a>
+            <a href="support.html" class="block px-5 py-3 hover:bg-gray-800 hover:text-amber-400">Support</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Search -->
+      <div class="hidden lg:flex items-center bg-gray-800 rounded-full px-4 py-2 w-64 border border-gray-700 focus-within:border-amber-400 focus-within:ring-2 focus-within:ring-amber-400/30 transition">
+        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <input type="text" placeholder="Search products..." class="bg-transparent outline-none w-full ml-3 text-sm text-white placeholder-gray-500">
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center gap-6 text-xl text-white">
+        <!-- Wishlist -->
+        <a href="wishlist.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+        </a>
+        <!-- User -->
+        <a href="login.html" class="hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+        </a>
+        <!-- Cart -->
+        <a href="cart.html" class="relative hover:text-amber-400 duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 100 4 2 2 0 000-4z"/></svg>
+          <span class="absolute -top-2 -right-2 bg-amber-400 text-black text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span>
+        </a>
+      </div>
+
+      <!-- Mobile & Tablet Menu -->
+      <div class="lg:hidden relative">
+        <input type="checkbox" id="mobileMenu" class="peer hidden">
+        <label for="mobileMenu" class="cursor-pointer text-3xl p-2 block text-white">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </label>
+        <div class="hidden peer-checked:block absolute right-0 mt-2 w-56 bg-black rounded-xl shadow-2xl border border-gray-700 z-50">
+          <ul class="py-2">
+            <li><a href="index.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Home</a></li>
+            <li><a href="products.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Products</a></li>
+            <li><a href="mobiles.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Mobiles</a></li>
+            <li><a href="laptop.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Laptops</a></li>
+            <li><a href="offers.html" class="block px-5 py-3 hover:bg-gray-800 text-white font-semibold">Offers</a></li>
+            <li><a href="mobile-accessories.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Accessories</a></li>
+            <li><a href="wishlist.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Wishlist</a></li>
+            <li><a href="cart.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Cart</a></li>
+            <li><a href="about.html" class="block px-5 py-3 hover:bg-gray-800 text-white">About Us</a></li>
+            <li><a href="support.html" class="block px-5 py-3 hover:bg-gray-800 text-white">Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+		
+	<!-- section 1 for hero laptops -->
+<section class="p-10 bg-gray-200">
+  <h2 class="text-3xl font-bold text-center mb-10">
+		Laptops
+	  </h2>
+
+	  <!-- Hero Image -->
+	  <div class="mb-10">
+		<img src="img/laptop_img/lap_hero.png" alt="laptop hero img"
+			 class="w-full h-full rounded-lg">
+	  </div>
+    
+    <div class="w-full bg-gradient-to-r from-blue-700 to-cyan-500 rounded-lg p-10 text-center text-white">
+      <h3 class="text-3xl md:text-5xl font-bold mb-4">🔥 Mega Laptop Sale</h3>
+      <p class="text-lg md:text-2xl">Up to 40% OFF on Top Brands | No Cost EMI Available</p>
+    </div>
+  </div>
+<!-- Shop by Brands -->
+<section id="brands" class="bg-white py-20">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- Heading -->
+        <div class="text-center mb-14">
+
+            <h2 class="text-4xl font-extrabold text-gray-900 mt-3">
+                Shop by Brands
+            </h2>
+
+            <p class="text-gray-500 mt-4">
+                Discover premium laptops from the world's leading brands.
+            </p>
+
+        </div>
+
+        <!-- Brand Logos -->
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8">
+
+            <!-- Apple -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/apple-logo.png"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Apple
+                </h3>
+
+            </a>
+
+            <!-- Dell -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.z8egwH46XBeLFts7bmtxmgHaHa?r=0&pid=ImgDet&w=184&h=184&c=7"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Dell
+                </h3>
+
+            </a>
+
+            <!-- HP -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/101/041/original/hp-logo-transparent-free-png.png"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    HP
+                </h3>
+
+            </a>
+
+            <!-- Lenovo -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://www.pngall.com/wp-content/uploads/8/Lenovo-Logo-PNG-File.png"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Lenovo
+                </h3>
+
+            </a>
+
+            <!-- ASUS -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://logodix.com/logo/1057088.jpg"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    ASUS
+                </h3>
+
+            </a>
+
+            <!-- Acer -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://logos-world.net/wp-content/uploads/2022/11/Acer-Emblem.png"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Acer
+                </h3>
+
+            </a>
+
+            <!-- Microsoft -->
+            <a href="#" class="group text-center">
+
+                <div class="w-32 h-32 mx-auto rounded-full bg-white border-2 border-cyan-400 shadow-lg flex items-center justify-center group-hover:scale-110 group-hover:border-blue-600 duration-300">
+
+                    <img src="https://static.vecteezy.com/system/resources/previews/028/339/965/original/microsoft-icon-logo-symbol-free-png.png"
+                         class="w-20 h-20 object-contain">
+
+                </div>
+
+                <h3 class="mt-4 font-semibold text-gray-800 group-hover:text-cyan-600">
+                    Microsoft
+                </h3>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+  
+  <div class="mb-12 bg-gradient-to-r from-blue-700 to-cyan-500 p-8 rounded-lg text-center text-white shadow-lg">
+  
+  <h2 class="text-3xl font-bold mb-4">🔥 Combo Offers</h2>
+  <p class="text-lg mb-6">Buy a Laptop &amp; Get Exciting Free Gifts!</p>
+  <div class="grid md:grid-cols-3 gap-6 ">
+    <div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-gray-900">
+      <h3 class="font-bold">MacBook Offer</h3>
+      <p>Buy MacBook → Get Free AirPods 🎧</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-gray-900">
+      <h3 class="font-bold">Dell Combo</h3>
+      <p>Buy Dell Laptop → Free Laptop Bag + Mouse 🎒</p>
+    </div>
+   
+    <div class="bg-white p-4 rounded shadow hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-gray-900">
+      <h3 class="font-bold">Gaming Pack</h3>
+      <p>Buy Gaming Laptop → Free Gaming Mouse + Headset 🎮</p>
+    </div>
+  </div>
+</div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+		  <!-- 1 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSs5Zm5-GRcqyK0Wx1XK7-9Z6vsXmGJ1H6zp8a3zNlAt_PpQyTBraqeWqLWAVUzuxK1y8RwaCf2YmL73LNV-jLZG_K26iDfm6bsRALXRK0qxJQR2f4HcW51"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">HP Pavilion Laptop</h3>
+			<p class="text-sm text-gray-500">i5 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹49,999</p>
+			<p><del>₹72,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 2 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://m.media-amazon.com/images/I/71I7xDIyINL._AC_UF1000,1000_QL80_.jpg"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Dell Inspiron 15</h3>
+			<p class="text-sm text-gray-500">i5 | 16GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹54,999</p>
+			<p><del>₹79,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 3 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-40 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/315523_0_4P35Q8bth.png"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Lenovo IdeaPad Slim</h3>
+			<p class="text-sm text-gray-500">Ryzen 5 | 8GB | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹44,999</p>
+			<p><del>₹68,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 4 -->	
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSzw4FCmJjKefFDDpim1oJ1zrdiixjzncoegJOdaoezUDrWIOaR6urAQF_LW0HRXofkorRRho2z3u-yYi6gDJl7IQLr8ASG8RQ7iwS-kupG41QPHbmm8BNcBosTtMDUWyYglfnLIIxk"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Apple MacBook Air M1</h3>
+			<p class="text-sm text-gray-500">8GB RAM | 256GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹79,999</p>
+			<p><del>₹99,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 5 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/computer/m/b/n/-original-imahknwxtncqwt8k.jpeg"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Asus VivoBook 15</h3>
+			<p class="text-sm text-gray-500">i3 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹39,999</p>
+			<p><del>₹59,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 6 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://media-ik.croma.com/Croma%20Assets/Computers%20Peripherals/Laptop/Images/314530_0_jqwv4i.png"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Acer ALG Gaming Laptop</h3>
+			<p class="text-sm text-gray-500">Ryzen 5 | 16GB RAM | GTX Graphics</p>
+			<p class="font-bold text-blue-700 text-lg">₹59,999</p>
+			<p><del>₹85,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 7 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-oPV7uTFuU52gkFjgKyi_KkUR8kyIOK4X_6Q-wlV_6g"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">MSI Gaming Laptop</h3>
+			<p class="text-sm text-gray-500">i7 | 16GB RAM | RTX Graphics</p>
+			<p class="font-bold text-blue-700 text-lg">₹89,999</p>
+			<p><del>₹1,20,000</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+
+		  <!-- 8 -->
+		  <div class="min-w-[250px] bg-white p-5 rounded hover:-translate-y-2 transition duration-400 text-center shadow-sm hover:shadow-lg transition">
+			<img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR12fh5s7w2B9PXFSrJhxJIrVx0Gf-0GJHU-aWv9ePbzzRxWACCFgZbEo0VhkImFQZm59ACGijRsY_9QZCr095HoFqb6dx_7cJOD5Z7gxB7Nf-xEHwiVcx1AatbFqVo8TxtrbfiCA"
+				 class="mx-auto h-40 object-contain mb-4">
+			<h3 class="text-lg font-bold">Samsung Galaxy Book</h3>
+			<p class="text-sm text-gray-500">i5 | 8GB RAM | 512GB SSD</p>
+			<p class="font-bold text-blue-700 text-lg">₹64,999</p>
+			<p><del>₹89,999</del> <span class="text-green-700 font-bold">Offer</span></p>
+			<a href="cart.html"
+			   class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded animate-bounce">
+			  Add Cart
+			</a>
+		  </div>
+	
+    <!-- Apple MacBook Air M4 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIP.DTnNTjuoTcx6dFcYNE35oQHaFs?w=231&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Air M4">
+      <h3 class="text-lg font-bold">MacBook Air M4</h3>
+      <p class="text-sm text-gray-500">13.6" | 16GB | 512GB SSD</p>
+      <p class="font-bold text-blue-700 text-lg">₹91,990</p>
+      <p><del>₹1,14,900</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- Dell XPS 14 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIP.jaVisA4ZtXwNmrl7v3AyPQAAAA?w=293&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="Dell XPS 14">
+      <h3 class="text-lg font-bold">Dell XPS 14</h3>
+      <p class="text-sm text-gray-500">Intel Core Ultra 7 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,49,990</p>
+      <p><del>₹1,79,990</del> <span class="text-green-700 font-bold">17% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- HP Spectre x360 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIP.ZOZRPhOkX1NgZjdm-AU1FgAAAA?w=253&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="HP Spectre x360">
+      <h3 class="text-lg font-bold">HP Spectre x360</h3>
+      <p class="text-sm text-gray-500">Intel Core Ultra 7 | 16GB | 1TB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,34,999</p>
+      <p><del>₹1,64,999</del> <span class="text-green-700 font-bold">18% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- Lenovo ThinkPad X1 Carbon -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIP.HwjZevWdbdoBkfwKRbtzAgHaF6?w=246&h=197&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="ThinkPad X1 Carbon">
+      <h3 class="text-lg font-bold">ThinkPad X1 Carbon</h3>
+      <p class="text-sm text-gray-500">Intel Core Ultra 7 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,64,990</p>
+      <p><del>₹1,94,990</del> <span class="text-green-700 font-bold">15% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- ASUS ROG Zephyrus G14 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIP.6R1b4ciBAXd6NSCL7xKwCQHaHa?w=175&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="ASUS ROG Zephyrus G14">
+      <h3 class="text-lg font-bold">ASUS ROG Zephyrus G14</h3>
+      <p class="text-sm text-gray-500">Ryzen 9 | 16GB | RTX 5060</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,84,990</p>
+      <p><del>₹2,09,990</del> <span class="text-green-700 font-bold">12% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- Acer Swift Go 14 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://m.media-amazon.com/images/I/61efw4fYmYL._AC_.jpg"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="Acer Swift Go 14">
+      <h3 class="text-lg font-bold">Acer Swift Go 14</h3>
+      <p class="text-sm text-gray-500">Intel Core Ultra 5 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹72,990</p>
+      <p><del>₹84,999</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- Microsoft Surface Laptop 6 -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://th.bing.com/th/id/OIF.kK8t0WH2y5PsnhRmpnitdQ?w=288&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="Surface Laptop 6">
+      <h3 class="text-lg font-bold">Surface Laptop 6</h3>
+      <p class="text-sm text-gray-500">Snapdragon X Elite | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,19,990</p>
+      <p><del>₹1,39,990</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+    <!-- Samsung Galaxy Book4 Pro -->
+    <div class="min-w-[250px] bg-white p-5 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center shadow-sm">
+      <img src="https://media.krefel.be/sys-master/products/9409460568094/1440x1440.41009932_06.webp"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="Galaxy Book4 Pro">
+      <h3 class="text-lg font-bold">Galaxy Book4 Pro</h3>
+      <p class="text-sm text-gray-500">Intel Core Ultra 7 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,39,990</p>
+      <p><del>₹1,64,990</del> <span class="text-green-700 font-bold">15% OFF</span></p>
+      <a href="cart.html" class="inline-block mt-3 bg-blue-700 text-white px-4 py-2 rounded">Add Cart</a>
+    </div>
+  </div>
+</section>
+
+<!-- MacBook section 2 -->
+<section class="bg-gray-200 p-10">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Apple MacBooks</h2>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+    <!-- MacBook Pro 16" M5 Max -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://laptopre.vn/upload/picture/picture-71678354697.jpg"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Pro 16 M5 Max">
+      <h3 class="text-xl font-bold">MacBook Pro 16"</h3>
+      <p>M5 Max | 48GB | 2TB</p>
+      <p class="font-bold text-blue-700 text-lg">₹4,29,000</p>
+      <p><del>₹4,99,900</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MacBook Pro 14" M5 Pro -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://cdn.pickr.com.au/wp-content/uploads/2019/07/BCC0E987-E00E-4A83-8FCD-0C66B1A56C3F.jpeg"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Pro 14 M5 Pro">
+      <h3 class="text-xl font-bold">MacBook Pro 14"</h3>
+      <p>M5 Pro | 18GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹2,49,900</p>
+      <p><del>₹2,79,900</del> <span class="text-green-700 font-bold">11% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MacBook Air 15" M5 -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://i.insider.com/5dcb20ad3afd37245f4d8969?width=700"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Air 15 M5">
+      <h3 class="text-xl font-bold">MacBook Air 15"</h3>
+      <p>M5 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,49,900</p>
+      <p><del>₹1,64,900</del> <span class="text-green-700 font-bold">9% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MacBook Air 13" M5 -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://www.geeky-gadgets.com/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=https:%2F%2Fi.ytimg.com%2Fvi%2Fp2R6I7i5IQQ%2F0.jpg"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Air 13 M5">
+      <h3 class="text-xl font-bold">MacBook Air 13" M5</h3>
+      <p>M5 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,19,900</p>
+      <p><del>₹1,34,900</del> <span class="text-green-700 font-bold">11% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MacBook Air 13" M4 -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.UyB62deYf705BhtT_lZ55QHaEe?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Air M4">
+      <h3 class="text-xl font-bold">MacBook Air 13" M4</h3>
+      <p>M4 | 16GB | 256GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹91,990</p>
+      <p><del>₹1,14,900</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MacBook Neo -->
+    <div class="bg-white border p-5 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition duration-400 text-center">
+      <img src="https://www.geeky-gadgets.com/wp-content/uploads/2026/03/macbook-neo-599-price-overview.jpg"
+           class="mx-auto h-40 object-contain mb-4"
+           alt="MacBook Neo">
+      <h3 class="text-xl font-bold">MacBook Neo</h3>
+      <p>A18 Pro | 8GB | 256GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹69,900</p>
+      <p><del>₹79,900</del> <span class="text-green-700 font-bold">13% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- MacBook combo offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      MacBook Special Offers
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <!-- Offer 1: MacBook Pro 16 -->
+      <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400 p-5 rounded-xl shadow-md w-72">
+        <img src="https://laptopre.vn/upload/picture/picture-71678354697.jpg"
+             class="w-full h-40 object-contain mb-4" alt="MacBook Pro 16">
+        <div class="flex justify-center gap-3">
+			<div class="flex justify-center gap-3">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+				   class="w-16 h-16 border rounded p-1">
+			  <img src="https://th.bing.com/th/id/OIP.a9N3N_5x2bGUc7Tc4DOz5QHaHu?w=179&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+				   class="w-16 h-16 border rounded p-1">
+			</div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">MacBook Pro 16"</h3>
+          <p class="text-gray-500 text-sm">+ AirPods Max + Charger</p>
+          <p class="text-green-600 font-semibold">22% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹3,89,000</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 2: MacBook Pro 14 -->
+      <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400 p-5 rounded-xl shadow-md w-72">
+        <img src="https://cdn.pickr.com.au/wp-content/uploads/2019/07/BCC0E987-E00E-4A83-8FCD-0C66B1A56C3F.jpeg"
+             class="w-full h-40 object-contain mb-4" alt="MacBook Pro 14">
+        <div class="flex justify-center gap-3">
+			<div class="flex justify-center gap-3">
+			  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+				   class="w-16 h-16 border rounded p-1">
+			  <img src="https://m.media-amazon.com/images/I/917XfXQPVoL._AC_SL1500_.jpg"
+				   class="w-16 h-16 border rounded p-1">
+			</div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">MacBook Pro 14"</h3>
+          <p class="text-gray-500 text-sm">+ AirPods Pro + Laptop Sleeve</p>
+          <p class="text-green-600 font-semibold">18% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹2,29,900</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Offer 3: MacBook Air -->
+      <div class="bg-white p-5 hover:shadow-2xl hover:-translate-y-2 transition duration-400 rounded-xl shadow-md w-72">
+        <img src="https://www.geeky-gadgets.com/wp-content/plugins/wp-youtube-lyte/lyteCache.php?origThumbUrl=https:%2F%2Fi.ytimg.com%2Fvi%2Fp2R6I7i5IQQ%2F0.jpg"
+             class="w-full h-40 object-contain mb-4" alt="MacBook Air">
+        <div class="flex justify-center gap-3">
+          <div class="flex justify-center gap-3">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://i5.walmartimages.com/asr/fe47a4ab-5ecc-414f-ae49-6c7a2669e11b_1.42489ef0e331c97f5252d7fc211303a1.jpeg"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">MacBook Air 13" M5</h3>
+          <p class="text-gray-500 text-sm">+ AirPods + Magic Mouse</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹1,09,900</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- Dell Laptops section 3 -->
+<section class="bg-gray-200 p-10">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Dell Laptops</h2>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+    <!-- Alienware Area-51 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.E0jBbBnpymsFQe0QRnCfLwHaHa?r=0&w=500&h=500&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="Alienware Area-51">
+      <h3 class="text-xl font-bold">Alienware Area-51</h3>
+      <p>Ultra 9 | 64GB | RTX 5090</p>
+      <p class="font-bold text-blue-700 text-lg">₹5,21,780</p>
+      <p><del>₹5,79,990</del> <span class="text-green-700 font-bold">10% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell XPS 16 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="img/laptop_img/del_img.png"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell XPS 16">
+      <h3 class="text-xl font-bold">Dell XPS 16</h3>
+      <p>Core Ultra 9 | 32GB | 1TB</p>
+      <p class="font-bold text-blue-700 text-lg">₹2,49,990</p>
+      <p><del>₹2,89,990</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell Pro 14 Premium -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://th.bing.com/th/id/OIP.Wa4P-03rb_37i9-b4w2GOQHaFP?w=241&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell Pro 14">
+      <h3 class="text-xl font-bold">Dell Pro 14 Premium</h3>
+      <p>Core Ultra 7 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹2,06,990</p>
+      <p><del>₹2,39,990</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell Latitude 7450 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.GKDYSY3cxvc-qQsPMojZfwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell Latitude">
+      <h3 class="text-xl font-bold">Dell Latitude 7450</h3>
+      <p>Core Ultra 5 | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,29,990</p>
+      <p><del>₹1,49,990</del> <span class="text-green-700 font-bold">13% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell Inspiron 16 Plus -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://www.myfixguide.com/wp-content/uploads/2022/07/inspiron-16-7620.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell Inspiron 16">
+      <h3 class="text-xl font-bold">Inspiron 16 Plus</h3>
+      <p>Core Ultra 7 | 16GB | 1TB</p>
+      <p class="font-bold text-blue-700 text-lg">₹89,990</p>
+      <p><del>₹1,09,990</del> <span class="text-green-700 font-bold">18% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell 15 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.YFxvHU5c4uzH9cvJTDQDeQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell 15">
+      <h3 class="text-xl font-bold">Dell 15 (2025)</h3>
+      <p>Core i3 13th Gen | 8GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹49,990</p>
+      <p><del>₹59,990</del> <span class="text-green-700 font-bold">17% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Dell Combo Offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      Dell Combo Offers
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <!-- Dell Offer 1 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+        <img src="img/laptop_img/del_img.png"
+             class="w-full h-40 object-contain mb-4" alt="XPS 16">
+        <div class="flex justify-center gap-3">
+          <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.A0UMbNmJ4Rc5Az4ZZNKkiAHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.pzGdoKHFmwCCccKt2RFAEAHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Dell XPS 16</h3>
+          <p class="text-gray-500 text-sm">+ Dell Backpack + Wireless Mouse</p>
+          <p class="text-green-600 font-semibold">20% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹2,29,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Dell Offer 2 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+        <img src="https://www.myfixguide.com/wp-content/uploads/2022/07/inspiron-16-7620.jpg"
+             class="w-full h-40 object-contain mb-4" alt="Inspiron 16">
+        <div class="flex justify-center gap-3">
+           <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.A0UMbNmJ4Rc5Az4ZZNKkiAHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.pzGdoKHFmwCCccKt2RFAEAHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Inspiron 16 Plus</h3>
+          <p class="text-gray-500 text-sm">+ Headphones + Laptop Sleeve</p>
+          <p class="text-green-600 font-semibold">22% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹79,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Dell Offer 3 -->
+      <div class="bg-white p-5 rounded-xl shadow-md w-72 hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.E0jBbBnpymsFQe0QRnCfLwHaHa?r=0&w=500&h=500&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <div class="flex justify-center gap-3">
+           <div class="flex justify-center gap-3">
+          <img src="https://th.bing.com/th/id/OIP.A0UMbNmJ4Rc5Az4ZZNKkiAHaHa?w=188&h=188&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+          <img src="https://th.bing.com/th/id/OIP.pzGdoKHFmwCCccKt2RFAEAHaHa?w=184&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+               class="w-16 h-16 border rounded p-1">
+        </div>
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Alienware Combo</h3>
+          <p class="text-gray-500 text-sm">+ Gaming Mouse + Headset</p>
+          <p class="text-green-600 font-semibold">15% OFF</p>
+        <p class="text-blue-600 font-bold text-lg">₹4,89,990</p>
+        <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+          Buy Now
+        </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- Gaming Laptops section 4 -->
+<section class="bg-gray-200 p-10">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Gaming Laptops</h2>
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+   
+   <!-- ASUS ROG Strix Scar 18 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://th.bing.com/th/id/OIP.X-kyY_5hG95wFyAd73VbrwHaFi?w=250&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="ROG Strix Scar 18">
+      <h3 class="text-xl font-bold">ROG Strix Scar 18</h3>
+      <p>Ultra 9 | 32GB | RTX 5090</p>
+      <p class="font-bold text-blue-700 text-lg">₹4,49,990</p>
+      <p><del>₹4,89,990</del> <span class="text-green-700 font-bold">8% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Lenovo Legion Pro 7i -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://cdn.mos.cms.futurecdn.net/S2awnLAmBMX5ZNzeteiwpP-1920-80.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="Legion Pro 7i">
+      <h3 class="text-xl font-bold">Legion Pro 7i</h3>
+      <p>Ultra 9 | 64GB | RTX 5090</p>
+      <p class="font-bold text-blue-700 text-lg">₹4,72,490</p>
+      <p><del>₹5,09,990</del> <span class="text-green-700 font-bold">7% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Acer Predator Helios 18 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://www.notebookcheck.net/fileadmin/_processed_/2/3/csm_Helios-18-7_9ab45daea6.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="Predator Helios 18">
+      <h3 class="text-xl font-bold">Predator Helios 18</h3>
+      <p>Ultra 9 | 32GB | RTX 5080</p>
+      <p class="font-bold text-blue-700 text-lg">₹2,49,990</p>
+      <p><del>₹2,99,990</del> <span class="text-green-700 font-bold">17% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- HP Omen 17 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81LUaazJcZL._AC_.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="HP Omen 17">
+      <h3 class="text-xl font-bold">HP Omen 17</h3>
+      <p>Core Ultra 9 | 32GB | RTX 5080</p>
+      <p class="font-bold text-blue-700 text-lg">₹1,76,399</p>
+      <p><del>₹2,09,990</del> <span class="text-green-700 font-bold">16% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- MSI Katana 17 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.79ZaDJDbkF_qaJoaCcrQJwHaD3?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="MSI Katana 17">
+      <h3 class="text-xl font-bold">MSI Katana 17</h3>
+      <p>Core i7 13th Gen | 16GB | RTX 4060</p>
+      <p class="font-bold text-blue-700 text-lg">₹92,999</p>
+      <p><del>₹1,09,990</del> <span class="text-green-700 font-bold">15% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- ASUS TUF Gaming A15 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://in.store.asus.com/media/catalog/product/f/a/fa506ncg-hn251ws_1_.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="TUF Gaming A15">
+      <h3 class="text-xl font-bold">TUF Gaming A15</h3>
+      <p>Ryzen 7 | 16GB | RTX 4050</p>
+      <p class="font-bold text-blue-700 text-lg">₹55,990</p>
+      <p><del>₹69,990</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Gaming Combo Offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      Gaming Combo Offers
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <!-- Gaming Offer 1 -->
+      <!-- offer prod 1 -->
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://m.media-amazon.com/images/I/81fxjeu8fdL._SL1500_.jpg"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">ROG Ultimate Combo</h3>
+          <p class="text-gray-500 text-sm">+ Gaming Mouse + Headset + Keyboard</p>
+          <p class="text-green-600 font-semibold">18% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹3,99,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Gaming Offer 2 -->
+     <!-- offer prod 1 -->
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://th.bing.com/th/id/OIP.X-kyY_5hG95wFyAd73VbrwHaFi?w=250&h=187&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+	  
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Legion Gaming Pack</h3>
+          <p class="text-gray-500 text-sm">+ Legion Headset + Gaming Mouse</p>
+          <p class="text-green-600 font-semibold">20% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹4,29,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Gaming Offer 3 -->
+      <!-- offer prod 1 -->
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://in.store.asus.com/media/catalog/product/f/a/fa506ncg-hn251ws_1_.jpg"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">TUF Gaming Combo</h3>
+          <p class="text-gray-500 text-sm">+ Cooling Pad + Gaming Backpack</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹49,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- Budget Laptops section 5 -->
+<section class="bg-gray-200 p-10">
+  <div class="text-center mb-8">
+    <h2 class="text-3xl font-bold text-gray-800">Budget Laptops</h2>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
+    <!-- Lenovo IdeaPad Slim 3 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://th.bing.com/th/id/OIP.MLYLfWxHQYEsKGsDnjRyvwHaFp?w=257&h=196&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="IdeaPad Slim 3">
+      <h3 class="text-xl font-bold">IdeaPad Slim 3</h3>
+      <p>Ryzen 5 | 16GB | 512GB SSD</p>
+      <p class="font-bold text-blue-700 text-lg">₹42,490</p>
+      <p><del>₹52,990</del> <span class="text-green-700 font-bold">20% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- ASUS Vivobook 15 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.YAZJ062gfy_KwKDkls8ZXAHaEt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+           class="mx-auto h-40 object-contain mb-4" alt="Vivobook 15">
+      <h3 class="text-xl font-bold">ASUS Vivobook 15</h3>
+      <p>Core i5 12th Gen | 8GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹42,990</p>
+      <p><del>₹49,990</del> <span class="text-green-700 font-bold">14% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- HP Laptop 15s -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://m.media-amazon.com/images/I/715q3phMRyL._SL1500_.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="HP 15s">
+      <h3 class="text-xl font-bold">HP Laptop 15s</h3>
+      <p>Core i5 13th Gen | 16GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹44,990</p>
+      <p><del>₹54,990</del> <span class="text-green-700 font-bold">18% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Acer Aspire 3 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://i5.walmartimages.com/seo/Acer-Aspire-3-15-6-Full-HD-Laptop-AMD-Ryzen-7-5700U-512GB-SSD-Windows-11-Home-A315-44P-R7H6_8cd66795-db63-4db2-b6c8-5e114e82e537.1931a925057ad58dd321f4c94f100c08.jpeg"
+           class="mx-auto h-40 object-contain mb-4" alt="Acer Aspire 3">
+      <h3 class="text-xl font-bold">Acer Aspire 3</h3>
+      <p>Core i3 13th Gen | 8GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹29,990</p>
+      <p><del>₹37,990</del> <span class="text-green-700 font-bold">21% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Dell Inspiron 14 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/20588619-8786-4954-9ca6-56860531aa1a.jpg"
+           class="mx-auto h-40 object-contain mb-4" alt="Dell Inspiron 14">
+      <h3 class="text-xl font-bold">Dell Inspiron 14</h3>
+      <p>Core i3 12th Gen | 8GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹41,089</p>
+      <p><del>₹49,990</del> <span class="text-green-700 font-bold">18% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+
+    <!-- Samsung Galaxy Book2 -->
+    <div class="bg-white p-5 rounded border text-center shadow-sm hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+      <img src="https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/4_10_Galaxy_Book2_Pro_Single_KV_2P_LI.png"
+           class="mx-auto h-40 object-contain mb-4" alt="Galaxy Book2">
+      <h3 class="text-xl font-bold">Galaxy Book2</h3>
+      <p>Core i5 12th Gen | 8GB | 512GB</p>
+      <p class="font-bold text-blue-700 text-lg">₹49,990</p>
+      <p><del>₹61,990</del> <span class="text-green-700 font-bold">19% OFF</span></p>
+      <p class="mt-3">
+        <a href="cart.html" class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-4 py-2 rounded">
+          Add Cart
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Budget Combo Offers -->
+  <section class="bg-gray-200 p-10">
+    <h2 class="text-2xl font-bold text-gray-800 text-center mb-10">
+      Budget Combo Offers
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <!-- Budget Offer 1 -->
+      
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://laptopmedia.com/wp-content/uploads/2024/09/s2-e1725804376548.jpg"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://www.okschoolandoffice.com.au/assets/alt_2/10409684.jpg?20190605103054"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://m.media-amazon.com/images/I/81B-WIr4LGL._AC_SL1500_.jpg"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Lenovo Combo</h3>
+          <p class="text-gray-500 text-sm">+ Wireless Mouse + Laptop Bag</p>
+          <p class="text-green-600 font-semibold">25% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹38,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Budget Offer 2 -->
+     <!-- offer prod 1 -->
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://i5.walmartimages.com/seo/Acer-Aspire-3-15-6-Full-HD-Laptop-AMD-Ryzen-7-5700U-512GB-SSD-Windows-11-Home-A315-44P-R7H6_8cd66795-db63-4db2-b6c8-5e114e82e537.1931a925057ad58dd321f4c94f100c08.jpeg"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVlUv8cAJX_LlZe9lntsxfmYkGyeDOzP8YrGA9V7f3Ag&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://www.okschoolandoffice.com.au/assets/alt_2/10409684.jpg?20190605103054"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">HP Combo</h3>
+          <p class="text-gray-500 text-sm">+ Headphones + Mouse</p>
+          <p class="text-green-600 font-semibold">22% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹39,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Budget Offer 3 -->
+      <!-- offer prod 1 -->
+    <div class="bg-white hover:shadow-2xl hover:-translate-y-2 transition duration-400  p-5 rounded-xl shadow-md w-72">
+
+      <!-- Main Image -->
+      <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/20588619-8786-4954-9ca6-56860531aa1a.jpg"
+           class="w-full h-40 object-contain mb-4">
+
+      <!-- offer Items -->
+      <div class="flex justify-center gap-3">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.sHHdTSV7ix0piFH3TFZZQwHaHa?r=0&w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3"
+             class="w-16 h-16 object-contain border rounded p-1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI6bDTd67i3bwiJMSPsUm2GbJhwYnF4z5iwoWI1zwPg&s=10"
+             class="w-16 h-16 object-contain border rounded p-1">
+      </div>
+        <div class="text-center mt-4">
+          <h3 class="font-bold text-lg">Student Combo</h3>
+          <p class="text-gray-500 text-sm">+ Backpack + USB Hub</p>
+          <p class="text-green-600 font-semibold">28% OFF</p>
+          <p class="text-blue-600 font-bold text-lg">₹26,990</p>
+          <button class="mt-3 px-4 py-2 text-white rounded-lg bg-gradient-to-r from-blue-700 to-cyan-500 animate-bounce">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</section>
+
+<!-- Laptop Offers and Benefits 6 -->
+<section class="p-10 bg-gray-200">
+    <h2 class="text-3xl font-bold text-center mb-8">Laptop Offers &amp; Benefits</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-center">
+        <div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+            <h3 class="text-2xl font-bold">Exchange Offer</h3>
+            <p>Exchange your old laptop and save up to ₹25,000 extra.</p>
+        </div>
+        <div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 animate-bounce rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+            <h3 class="text-2xl font-bold">No Cost EMI</h3>
+            <p>Starting at just ₹2,499/month. Easy EMI on all leading banks.</p>
+        </div>
+        <div class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white p-8 rounded hover:shadow-2xl hover:-translate-y-2 transition duration-400">
+            <h3 class="text-2xl font-bold">Extended Warranty</h3>
+            <p>Up to 3 years brand warranty + accidental damage protection.</p>
+        </div>
+    </div>
+</section>
+    
+
+<!-- Section 7 -->
+<section class="px-4 py-12 md:px-8 lg:px-16 xl:px-24 2xl:px-32 bg-white">
+    
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-10">
+        Laptop Buying Guide
+    </h2>
+    
+    <h3 class="text-xl md:text-2xl font-bold mb-6">
+        Choose the Right Laptop
+    </h3>
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+        <table class="w-full min-w-[650px] bg-white border border-gray-300 text-center">
+            <thead>
+                <tr class="bg-gradient-to-r from-blue-700 to-cyan-500 text-white">
+                    <th class="border border-gray-300 p-4">Usage</th>
+                    <th class="border border-gray-300 p-4">Suggested Laptop Type</th>
+                    <th class="border border-gray-300 p-4">Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4 font-semibold">Student / Basic Use</td>
+                    <td class="border border-gray-300 p-4">Budget Laptop (₹25K-₹50K)</td>
+                    <td class="border border-gray-300 p-4">
+                       Perfect for online classes, browsing, MS Office &amp; streaming
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4 font-semibold">Office / Business</td>
+                    <td class="border border-gray-300 p-4">
+                        Ultrabook / Business Laptop (₹50K-₹1.5L)
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                        Lightweight, long battery life, professional performance
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4 font-semibold">Creative / Design</td>
+                    <td class="border border-gray-300 p-4">
+                        MacBook Pro / Dell XPS (₹1.5L-₹3L)
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                       Color-accurate display, powerful CPU/GPU for rendering
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4 font-semibold">Gaming</td>
+                    <td class="border border-gray-300 p-4">
+                        Gaming Laptop (₹55K-₹5L+)
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                        Dedicated GPU, high refresh rate display, advanced cooling
+                    </td>
+                </tr>
+                <tr class="hover:bg-gray-100">
+                    <td class="border border-gray-300 p-4 font-semibold">Programming / Development</td>
+                    <td class="border border-gray-300 p-4">
+                        MacBook / ThinkPad (₹70K-₹2L)
+                    </td>
+                    <td class="border border-gray-300 p-4">
+                        Great keyboard, Unix-based OS, powerful multitasking
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="text-center mt-10">
+        <a href="contact.html"
+            class="inline-block bg-gradient-to-r from-blue-700 to-cyan-500 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg transition duration-300 animate-bounce">
+            Need Help? Contact Us
+        </a>
+    </div>
+</section>
+<!--footer-->
+<footer class="bg-black text-white pt-16 pb-8 px-6 ">
+	<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+			<!-- About -->
+			<div>
+			  <h3 class="text-2xl font-extrabold mb-3">Minnal<span class="text-amber-400">Mart</span></h3>
+			  <p class="text-slate-400 text-sm leading-relaxed">
+				Your one-stop electronics store for mobiles, laptops, TVs, audio and accessories at unbeatable prices.
+			  </p>
+			  <div class="flex gap-4 mt-4 text-xl">
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/whatsapp.png" alt="whatsapp.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/instagram.png" alt="insta.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/twitter.png" alt="twitter.logo" class="h-8"></a>
+				<a href="#" class="hover:text-amber-400 transition"><img src="img/youtube.png" alt="yt.logo" class="h-8"></a>			
+			  </div>
+			  <!--a href="#" class="hover:text-amber-400 transition"><img src="https://i.imgur.com/8WrpZ60.png" alt="yt.logo" class="h-35 w-full mt-10"></a-->
+			</div>
+
+			<!-- Shop -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Shop</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="products.html" class="hover:text-amber-400 transition">All Products</a></li>
+				<li><a href="mobiles.html" class="hover:text-amber-400 transition">Mobiles</a></li>
+				<li><a href="laptop.html" class="hover:text-amber-400 transition">Laptops</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">TVs</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Audio</a></li>
+				<li><a href="mobile-accessories.html" class="hover:text-amber-400 transition">Accessories</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Featured Product</a></li>
+			  </ul>
+			</div>
+
+			<!-- Account -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">My Account</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="login.html" class="hover:text-amber-400 transition">Login</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Register</a></li>
+				<li><a href="cart.html" class="hover:text-amber-400 transition">Cart</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Checkout</a></li>
+				<li><a href="wishlist.html" class="hover:text-amber-400 transition">Wishlist</a></li>
+			  </ul>
+			</div>
+
+			<!-- Company -->
+			<div>
+			  <h4 class="font-bold text-lg mb-3">Company</h4>
+			  <ul class="space-y-2 text-slate-400 text-sm">
+				<li><a href="about.html" class="hover:text-amber-400 transition">About Us</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Blog</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">FAQ</a></li>
+				<li><a href="#" class="hover:text-amber-400 transition">Contact</a></li>
+			  </ul>	
+			</div>
+		  </div>
+</footer>		
+		
+</body>
+</html>
