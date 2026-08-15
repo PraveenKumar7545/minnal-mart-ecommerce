@@ -11,7 +11,7 @@ MinnalMart provides a clean and user-friendly shopping interface with multiple p
 🌐 **[View MinnalMart Live Website](https://praveenkumar7545.github.io/minnal-mart-ecommerce/Front_End_Project/Minnal_mart/login.html)**
 
 ---
-
+  
 ## 📌 Project Overview
 
 **MinnalMart** is a frontend e-commerce project developed to practice and demonstrate modern web design using **HTML5 and Tailwind CSS**.
