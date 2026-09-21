@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://praveenkumar7545.github.io/minnal-mart-ecommerce/Front_End_Project/Minnal_mart/sitemap.xml
