@@ -3,7 +3,7 @@
 A modern and responsive **multi-page electronics e-commerce website** built using **HTML5 and Tailwind CSS**.
 
 MinnalMart provides a clean and user-friendly shopping interface with multiple product categories, product listings, offers, cart, wishlist, login, customer support, and other essential e-commerce pages.
-
+ 
 ---
 
 ## 🚀 Live Demo
