@@ -9,7 +9,7 @@ MinnalMart provides a clean and user-friendly shopping interface with multiple p
 ## 🚀 Live Demo 
 
 🌐 **[View MinnalMart Live Website](https://praveenkumar7545.github.io/minnal-mart-ecommerce/Front_End_Project/Minnal_mart/login.html)**
- 
+  
 --- 
     
 ## 📌 Project Overview
