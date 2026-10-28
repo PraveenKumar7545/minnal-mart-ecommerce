@@ -12,7 +12,7 @@ MinnalMart provides a clean and user-friendly shopping interface with multiple p
   
 --- 
     
-## 📌 Project Overview
+## 📌 Project Overview 
   
 **MinnalMart** is a frontend e-commerce project developed to practice and demonstrate modern web design using **HTML5 and Tailwind CSS**.
 
